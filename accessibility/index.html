@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <title>Accessibility | Cross Care Group</title>
+    <meta
+        content="Our commitment to making the Cross Care Group website accessible to everyone, including people with disability."
+        name="description" />
+    <link href="/accessibility/" rel="canonical" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../styles/main.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'ccg-navy': '#003B5C',
+                        'ccg-gold': '#FFAB40',
+                        'ccg-teal': '#0096A1',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body id="accessibility-page">
+    <a class="skip-link" href="#main">Skip to main content</a>
+
+    <!-- Navigation Bar -->
+    <header id="site-header"
+        class="fixed top-0 left-0 w-full bg-white/95 backdrop-blur-md z-[1000] border-b border-navy/5 transition-all duration-500 ease-in-out h-20 lg:h-24">
+        <div class="max-w-[1500px] mx-auto px-6 h-full flex items-center justify-between transition-all duration-500">
+            <!-- Brand -->
+            <a href="../index.html" class="shrink-0 transition-transform duration-500 origin-left"
+                id="header-logo-link">
+                <img src="../images/logo.png" alt="Cross Care Group"
+                    class="h-10 lg:h-12 w-auto transition-all duration-500" id="header-logo">
+            </a>
+
+            <!-- Nav Links -->
+            <nav class="hidden lg:flex items-center gap-x-4">
+                <a href="../get-support/index.html"
+                    class="text-[15px] font-medium text-ccg-navy/80 hover:text-white hover:bg-ccg-gold px-4 py-2 rounded-full transition-all">Get
+                    Support</a>
+                <div class="relative group">
+                    <a href="../make-a-referral/index.html"
+                        class="text-[15px] font-medium text-ccg-navy/80 group-hover:text-white group-hover:bg-ccg-gold px-4 py-2 rounded-full transition-all flex items-center gap-1">
+                        For Referrers <span
+                            class="text-[10px] opacity-50 group-hover:rotate-180 transition-transform">▼</span>
+                    </a>
+                    <!-- Dropdown -->
+                    <div
+                        class="absolute top-full left-1/2 -translate-x-1/2 mt-2 w-64 bg-white/95 backdrop-blur-md rounded-2xl shadow-xl border border-navy/5 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform translate-y-2 group-hover:translate-y-0 z-[1100] py-3 overflow-hidden">
+                        <a href="../make-a-referral/index.html#referral-guide"
+                            class="block px-6 py-3 text-[14px] font-semibold text-ccg-navy/80 hover:text-white hover:bg-ccg-gold transition-all">Referral
+                            Guide</a>
+                        <a href="../make-a-referral/index.html#referral-container"
+                            class="block px-6 py-3 text-[14px] font-semibold text-ccg-navy/80 hover:text-white hover:bg-ccg-gold transition-all">Referral
+                            Form</a>
+                    </div>
+                </div>
+                <div class="relative group">
+                    <a href="../index.html#service"
+                        class="text-[15px] font-medium text-ccg-navy/80 group-hover:text-white group-hover:bg-ccg-gold px-4 py-2 rounded-full transition-all flex items-center gap-1">
+                        Services <span
+                            class="text-[10px] opacity-50 group-hover:rotate-180 transition-transform">▼</span>
+                    </a>
+                    <!-- Dropdown Menu -->
+                    <div
+                        class="absolute top-[100%] left-0 w-64 bg-white rounded-2xl shadow-xl border border-navy/5 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform translate-y-2 group-hover:translate-y-0 z-[1100] py-3 overflow-hidden">
+                        <a href="../services/community_care.html"
+                            class="block px-6 py-3 text-[14px] font-semibold text-ccg-navy/80 hover:text-white hover:bg-ccg-gold transition-all">Community
+                            Care</a>
+                        <a href="../services/allied_health.html"
+                            class="block px-6 py-3 text-[14px] font-semibold text-ccg-navy/80 hover:text-white hover:bg-ccg-gold transition-all">Allied
+                            Health</a>
+                        <a href="../services/hospital_in_the_home.html"
+                            class="block px-6 py-3 text-[14px] font-semibold text-ccg-navy/80 hover:text-white hover:bg-ccg-gold transition-all">Hospital
+                            in the Home</a>
+                        <a href="../services/hospital_to_home.html"
+                            class="block px-6 py-3 text-[14px] font-semibold text-ccg-navy/80 hover:text-white hover:bg-ccg-gold transition-all">Hospital
+                            to Home</a>
+                        <a href="../services/rehab_in_the_home.html"
+                            class="block px-6 py-3 text-[14px] font-semibold text-ccg-navy/80 hover:text-white hover:bg-ccg-gold transition-all">Rehab
+                            in the Home</a>
+                    </div>
+                </div>
+                <a href="../why-cross-care/index.html"
+                    class="text-[15px] font-medium text-ccg-navy/80 hover:text-white hover:bg-ccg-gold px-4 py-2 rounded-full transition-all">About</a>
+                <div class="relative group">
+                    <a href="../careers/jobs.html"
+                        class="text-[15px] font-medium text-ccg-navy/80 group-hover:text-white group-hover:bg-ccg-gold px-4 py-2 rounded-full transition-all flex items-center gap-1">
+                        Careers <span
+                            class="text-[10px] opacity-50 group-hover:rotate-180 transition-transform">▼</span>
+                    </a>
+                    <!-- Dropdown -->
+                    <div
+                        class="absolute top-full left-1/2 -translate-x-1/2 mt-2 w-64 bg-white/95 backdrop-blur-md rounded-2xl shadow-xl border border-navy/5 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform translate-y-2 group-hover:translate-y-0 z-[1100] py-3 overflow-hidden">
+                        <a href="../careers/jobs.html"
+                            class="block px-6 py-3 text-[14px] font-semibold text-ccg-navy/80 hover:text-white hover:bg-ccg-gold transition-all">Open
+                            Roles</a>
+                        <a href="../careers/expression-of-interest.html"
+                            class="block px-6 py-3 text-[14px] font-semibold text-ccg-navy/80 hover:text-white hover:bg-ccg-gold transition-all">Expression
+                            of Interest</a>
+                    </div>
+                </div>
+                <div class="relative group">
+                    <a href="../rights-feedback-complaints/index.html"
+                        class="text-[15px] font-medium text-ccg-navy/80 group-hover:text-white group-hover:bg-ccg-gold px-4 py-2 rounded-full transition-all flex items-center gap-1">
+                        Advocacy <span
+                            class="text-[10px] opacity-50 group-hover:rotate-180 transition-transform">▼</span>
+                    </a>
+                    <!-- Advocacy Dropdown -->
+                    <div
+                        class="absolute top-[100%] left-1/2 -translate-x-1/2 mt-2 w-64 bg-white rounded-2xl shadow-xl border border-navy/5 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform translate-y-2 group-hover:translate-y-0 z-[1100] py-3 overflow-hidden">
+                        <a href="../rights-feedback-complaints/index.html#rights"
+                            class="block px-6 py-3 text-[14px] font-semibold text-ccg-navy/80 hover:text-white hover:bg-ccg-gold transition-all">Your
+                            Rights</a>
+                        <a href="../stories/index.html"
+                            class="block px-6 py-3 text-[14px] font-semibold text-ccg-navy/80 hover:text-white hover:bg-ccg-gold transition-all">Stories</a>
+                        <a href="../rights-feedback-complaints/index.html#feedback"
+                            class="block px-6 py-3 text-[14px] font-semibold text-ccg-navy/80 hover:text-white hover:bg-ccg-gold transition-all">Feedback</a>
+                        <a href="../rights-feedback-complaints/index.html#complaints"
+                            class="block px-6 py-3 text-[14px] font-semibold text-ccg-navy/80 hover:text-white hover:bg-ccg-gold transition-all">Complaints</a>
+                    </div>
+                </div>
+                <div class="relative group">
+                    <a href="../resources/easy-read.html"
+                        class="text-[15px] font-medium text-ccg-navy/80 group-hover:text-white group-hover:bg-ccg-gold px-4 py-2 rounded-full transition-all flex items-center gap-1">
+                        Resources <span
+                            class="text-[10px] opacity-50 group-hover:rotate-180 transition-transform">▼</span>
+                    </a>
+                    <!-- Resources Dropdown -->
+                    <div
+                        class="absolute top-[100%] left-1/2 -translate-x-1/2 mt-2 w-64 bg-white rounded-2xl shadow-xl border border-navy/5 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform translate-y-2 group-hover:translate-y-0 z-[1100] py-3 overflow-hidden">
+                        <a href="../resources/easy-read.html"
+                            class="block px-6 py-3 text-[14px] font-semibold text-ccg-navy/80 hover:text-white hover:bg-ccg-gold transition-all">Easy
+                            Read</a>
+                        <a href="../resources/faqs.html"
+                            class="block px-6 py-3 text-[14px] font-semibold text-ccg-navy/80 hover:text-white hover:bg-ccg-gold transition-all">FAQs</a>
+                        <a href="../resources/guides.html"
+                            class="block px-6 py-3 text-[14px] font-semibold text-ccg-navy/80 hover:text-white hover:bg-ccg-gold transition-all">Guides
+                            & Checklists</a>
+                        <a href="../resources/forms.html"
+                            class="block px-6 py-3 text-[14px] font-semibold text-ccg-navy/80 hover:text-white hover:bg-ccg-gold transition-all">Forms
+                            & Documents</a>
+                        <a href="../resources/blog.html"
+                            class="block px-6 py-3 text-[14px] font-semibold text-ccg-navy/80 hover:text-white hover:bg-ccg-gold transition-all">Blog</a>
+                    </div>
+                </div>
+            </nav>
+
+            <!-- Actions -->
+            <div class="flex items-center gap-x-6">
+
+                <!-- CTA -->
+                <a href="../contact/index.html"
+                    class="hidden xl:flex items-center justify-center bg-ccg-navy text-white px-7 py-3 rounded-full font-bold text-[15px] hover:bg-ccg-gold hover:text-ccg-navy transition-all hover:-translate-y-0.5 shadow-md whitespace-nowrap">
+                    Contact
+                </a>
+
+                <!-- Mobile Toggle -->
+                <button id="mobile-menu-toggle"
+                    class="lg:hidden p-2 text-ccg-navy transition-colors hover:text-ccg-gold"
+                    aria-label="Toggle mobile menu">
+                    <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path id="menu-icon" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
+                            d="M4 6h16M4 12h16m-7 6h7"></path>
+                        <path id="close-icon" class="hidden" stroke-linecap="round" stroke-linejoin="round"
+                            stroke-width="2.5" d="M6 18L18 6M6 6l12 12"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu Overlay -->
+        <div id="mobile-menu"
+            class="fixed inset-0 bg-white z-[999] opacity-0 invisible translate-x-full transition-all duration-300 lg:hidden text-center md:text-left">
+            <!-- Fixed Back Button Overlay (Transparent background to allow in-line alignment) -->
+            <div class="fixed top-0 left-0 w-full z-[1001] px-6 h-20 flex items-center pointer-events-none">
+                <button id="mobile-menu-back"
+                    class="p-2 text-ccg-navy hover:text-ccg-gold transition-colors pointer-events-auto"
+                    aria-label="Close menu">
+                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M15 19l-7-7 7-7">
+                        </path>
+                    </svg>
+                </button>
+            </div>
+            <div class="flex flex-col h-full pt-6 px-6 pb-10 overflow-y-auto bg-white relative">
+                <nav class="flex flex-col gap-y-4 mb-10">
+                    <a href="../get-support/index.html"
+                        class="text-2xl font-bold text-ccg-navy hover:text-ccg-gold transition-colors py-2">Get
+                        Support</a>
+                    <div class="flex flex-col gap-y-3 pt-2 items-center">
+                        <span class="text-xs font-black uppercase tracking-widest text-ccg-navy/30">For Referrers</span>
+                        <a href="../make-a-referral/index.html#referral-guide"
+                            class="text-lg font-semibold text-ccg-navy hover:text-ccg-gold transition-colors">Referral
+                            Guide</a>
+                        <a href="../make-a-referral/index.html#referral-container"
+                            class="text-lg font-semibold text-ccg-navy hover:text-ccg-gold transition-colors">Referral
+                            Form</a>
+                    </div>
+                    <div class="flex flex-col gap-y-3 pt-2 items-center">
+                        <span class="text-xs font-black uppercase tracking-widest text-ccg-navy/30">Services</span>
+                        <a href="../services/community_care.html"
+                            class="text-lg font-semibold text-ccg-navy hover:text-ccg-gold transition-colors">Community
+                            Care</a>
+                        <a href="../services/allied_health.html"
+                            class="text-lg font-semibold text-ccg-navy hover:text-ccg-gold transition-colors">Allied
+                            Health</a>
+                        <a href="../services/hospital_in_the_home.html"
+                            class="text-lg font-semibold text-ccg-navy hover:text-ccg-gold transition-colors">Hospital
+                            in the Home</a>
+                        <a href="../services/hospital_to_home.html"
+                            class="text-lg font-semibold text-ccg-navy hover:text-ccg-gold transition-colors">Hospital
+                            to Home</a>
+                        <a href="../services/rehab_in_the_home.html"
+                            class="text-lg font-semibold text-ccg-navy hover:text-ccg-gold transition-colors">Rehab
+                            in the Home</a>
+                    </div>
+                    <a href="../why-cross-care/index.html"
+                        class="text-2xl font-bold text-ccg-navy hover:text-ccg-gold transition-colors py-2">About</a>
+                    <div class="flex flex-col gap-y-3 pt-2 items-center">
+                        <span class="text-xs font-black uppercase tracking-widest text-ccg-navy/30">Careers</span>
+                        <a href="../careers/jobs.html"
+                            class="text-lg font-semibold text-ccg-navy hover:text-ccg-gold transition-colors">Open
+                            Roles</a>
+                        <a href="../careers/expression-of-interest.html"
+                            class="text-lg font-semibold text-ccg-navy hover:text-ccg-gold transition-colors">Expression
+                            of Interest</a>
+                    </div>
+                    <div class="flex flex-col gap-y-3 pt-2 items-center">
+                        <span class="text-xs font-black uppercase tracking-widest text-ccg-navy/30">Advocacy</span>
+                        <a href="../rights-feedback-complaints/index.html#rights"
+                            class="text-lg font-semibold text-ccg-navy hover:text-ccg-gold transition-colors">Your
+                            Rights</a>
+                        <a href="../stories/index.html"
+                            class="text-lg font-semibold text-ccg-navy hover:text-ccg-gold transition-colors">Stories</a>
+                        <a href="../rights-feedback-complaints/index.html#feedback"
+                            class="text-lg font-semibold text-ccg-navy hover:text-ccg-gold transition-colors">Feedback</a>
+                        <a href="../rights-feedback-complaints/index.html#complaints"
+                            class="text-lg font-semibold text-ccg-navy hover:text-ccg-gold transition-colors">Complaints</a>
+                    </div>
+                    <div class="flex flex-col gap-y-3 pt-2 items-center">
+                        <span class="text-xs font-black uppercase tracking-widest text-ccg-navy/30">Resources</span>
+                        <a href="../resources/easy-read.html"
+                            class="text-lg font-semibold text-ccg-navy hover:text-ccg-gold transition-colors">Easy
+                            Read</a>
+                        <a href="../resources/faqs.html"
+                            class="text-lg font-semibold text-ccg-navy hover:text-ccg-gold transition-colors">FAQs</a>
+                        <a href="../resources/guides.html"
+                            class="text-lg font-semibold text-ccg-navy hover:text-ccg-gold transition-colors">Guides
+                            & Checklists</a>
+                        <a href="../resources/forms.html"
+                            class="text-lg font-semibold text-ccg-navy hover:text-ccg-gold transition-colors">Forms
+                            & Documents</a>
+                        <a href="../resources/blog.html"
+                            class="text-lg font-semibold text-ccg-navy hover:text-ccg-gold transition-colors">Blog</a>
+                    </div>
+                </nav>
+
+                <div class="mt-auto pt-6">
+                    <a href="../get-support/index.html#support-form-container"
+                        class="inline-block bg-ccg-navy text-white text-center py-4 px-10 rounded-full font-bold text-base hover:bg-ccg-gold hover:text-ccg-navy transition-all shadow-md">
+                        Request Support
+                    </a>
+                </div>
+            </div>
+        </div>
+        </div>
+    </header>
+
+    <script>
+        const header = document.getElementById('site-header');
+        const logo = document.getElementById('header-logo');
+        const mobileMenuToggle = document.getElementById('mobile-menu-toggle');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const menuIcon = document.getElementById('menu-icon');
+        const closeIcon = document.getElementById('close-icon');
+        let isMenuOpen = false;
+
+        function toggleMenu() {
+            isMenuOpen = !isMenuOpen;
+            if (isMenuOpen) {
+                mobileMenu.classList.remove('opacity-0', 'invisible', 'translate-x-full');
+                menuIcon.classList.add('hidden');
+                closeIcon.classList.remove('hidden');
+                document.body.style.overflow = 'hidden';
+            } else {
+                mobileMenu.classList.add('opacity-0', 'invisible', 'translate-x-full');
+                menuIcon.classList.remove('hidden');
+                closeIcon.classList.add('hidden');
+                document.body.style.overflow = '';
+            }
+        }
+
+        mobileMenuToggle.addEventListener('click', toggleMenu);
+
+        const mobileMenuBack = document.getElementById('mobile-menu-back');
+        mobileMenuBack?.addEventListener('click', toggleMenu);
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 20) {
+                header.classList.remove('h-20', 'lg:h-24');
+                header.classList.add('h-16', 'shadow-sm');
+                logo.classList.remove('h-10', 'lg:h-12');
+                logo.classList.add('h-8');
+            } else {
+                header.classList.add('h-20', 'lg:h-24');
+                header.classList.remove('h-16', 'shadow-sm');
+                logo.classList.add('h-10', 'lg:h-12');
+                logo.classList.remove('h-8');
+            }
+        });
+    </script>
+
+    <main id="main">
+        <!-- Hero Section -->
+        <section class="hero pt-24 lg:pt-32 pb-12 lg:pb-20 border-b border-slate-100"
+            aria-labelledby="accessibility-title">
+            <div class="bg-layer bg-dot-pattern"></div>
+            <div class="glow-orb orb--1" style="top: -15%; right: -10%; opacity: 0.5;"></div>
+
+            <div class="max-w-4xl mx-auto px-6 text-center" data-reveal>
+                <div class="flex items-center justify-center gap-2 mb-8">
+                    <a href="../index.html"
+                        class="text-[11px] font-black uppercase tracking-[0.2em] text-ccg-navy/40 hover:text-ccg-teal transition-colors">Home</a>
+                    <span class="text-ccg-navy/20 text-[10px] uppercase font-black tracking-[0.2em]">/</span>
+                    <span class="text-[11px] font-black uppercase tracking-[0.2em] text-ccg-navy">Accessibility</span>
+                </div>
+
+                <div class="inline-flex items-center gap-2 bg-[#F0F7F9] px-4 py-2 rounded-full mb-8">
+                    <span class="w-2 h-2 bg-ccg-teal rounded-full"></span>
+                    <span class="text-ccg-navy font-black text-[10px] uppercase tracking-widest leading-none">Inclusive
+                        Design</span>
+                </div>
+
+                <h1 id="accessibility-title" class="text-5xl md:text-7xl font-black text-ccg-navy mb-8 tracking-tight">
+                    Care without Boundaries
+                </h1>
+
+                <p class="text-xl text-slate-500 max-w-2xl mx-auto leading-relaxed font-medium">
+                    At Cross Care Group, we are committed to ensuring our digital experiences are accessible to
+                    everyone, regardless of ability or technology.
+                </p>
+            </div>
+        </section>
+
+        <!-- Commitment Section -->
+        <section class="py-24 bg-white relative overflow-hidden">
+            <div class="container relative z-10">
+                <div class="max-w-3xl mx-auto mb-20 text-center" data-reveal>
+                    <h2 class="text-4xl font-black text-ccg-navy mb-6">Our Commitment</h2>
+                    <p class="text-slate-500 text-lg leading-relaxed font-medium">
+                        We believe that information and healthcare support should be available to all. We are actively
+                        working to increase the accessibility and usability of our website and in doing so adhere to
+                        many of the available standards and guidelines.
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                    <!-- Standard -->
+                    <div class="service-grid-card-premium is-vertical !p-10 shadow-xl group hover:-translate-y-2 transition-all duration-500"
+                        data-reveal>
+                        <div
+                            class="w-14 h-14 bg-ccg-teal/10 rounded-2xl flex items-center justify-center mb-8 group-hover:bg-ccg-teal group-hover:text-white transition-colors duration-500 text-ccg-teal">
+                            <svg viewBox="0 0 24 24" class="w-7 h-7" fill="currentColor">
+                                <path
+                                    d="M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M12,20A8,8 0 0,1 4,12A8,8 0 0,1 12,4A8,8 0 0,1 20,12A8,8 0 0,1 12,20M12,7A5,5 0 0,0 7,12A5,5 0 0,0 12,17A5,5 0 0,0 17,12A5,5 0 0,0 12,7M12,15A3,3 0 0,1 9,12A3,3 0 0,1 12,9A3,3 0 0,1 15,12A3,3 0 0,1 12,15Z" />
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-ccg-navy mb-3">WCAG 2.1 Standard</h3>
+                        <p class="text-slate-500 text-sm leading-relaxed font-medium">We strive to conform to the World
+                            Wide Web Consortium (W3C) Web Content Accessibility Guidelines 2.1 Level AA.</p>
+                    </div>
+
+                    <!-- Testing -->
+                    <div class="service-grid-card-premium is-vertical !p-10 shadow-xl group hover:-translate-y-2 transition-all duration-500"
+                        data-reveal>
+                        <div
+                            class="w-14 h-14 bg-ccg-gold/10 rounded-2xl flex items-center justify-center mb-8 group-hover:bg-ccg-gold group-hover:text-white transition-colors duration-500 text-ccg-gold">
+                            <svg viewBox="0 0 24 24" class="w-7 h-7" fill="currentColor">
+                                <path
+                                    d="M12,2C6.47,2 2,6.47 2,12C2,17.53 6.47,22 12,22C17.53,22 22,17.53 22,12C22,6.47 17.53,2 12,2M12,20C7.59,20 4,16.41 4,12C4,7.59 7.59,4 12,4C16.41,4 20,7.59 20,12C20,16.41 16.41,20 12,20M15.59,7L12,10.59L8.41,7L7,8.41L10.59,12L7,15.59L8.41,17L12,13.41L15.59,17L17,15.59L13.41,12L17,8.41L15.59,7Z" />
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-ccg-navy mb-3">Continuous Testing</h3>
+                        <p class="text-slate-500 text-sm leading-relaxed font-medium">Our platform is frequently audited
+                            using both automated tools and manual testing with assistive technologies.</p>
+                    </div>
+
+                    <!-- Feedback -->
+                    <div class="service-grid-card-premium is-vertical !p-10 shadow-xl group hover:-translate-y-2 transition-all duration-500"
+                        data-reveal>
+                        <div
+                            class="w-14 h-14 bg-ccg-navy/5 rounded-2xl flex items-center justify-center mb-8 group-hover:bg-ccg-navy group-hover:text-white transition-colors duration-500 text-ccg-navy">
+                            <svg viewBox="0 0 24 24" class="w-7 h-7" fill="currentColor">
+                                <path
+                                    d="M20,2H4A2,2 0 0,0 2,4V22L6,18H20A2,2 0 0,0 22,16V4A2,2 0 0,0 20,2M20,16H5.17L4,17.17V4H20V16M7,9H17V11H7V9M7,12H14V14H7V12Z" />
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-ccg-navy mb-3">User Feedback</h3>
+                        <p class="text-slate-500 text-sm leading-relaxed font-medium">We actively seek and act upon
+                            feedback from users with diverse needs to improve our interface.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Accessibility Features Section -->
+        <section class="section relative overflow-hidden bg-slate-50">
+            <div class="bg-layer bg-dot-pattern"></div>
+            <div class="max-w-6xl mx-auto px-6 relative z-10">
+                <div class="text-center mb-20" data-reveal>
+                    <span class="text-xs font-black uppercase tracking-[0.3em] text-ccg-teal mb-4 block">Navigation &
+                        Tools</span>
+                    <h2 class="text-5xl font-black text-ccg-navy mb-8 tracking-tight italic">Key Features</h2>
+                    <div class="w-20 h-1.5 bg-ccg-gold mx-auto mb-10"></div>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                    <div class="bg-white p-12 rounded-[3.5rem] shadow-sm border border-slate-100" data-reveal>
+                        <h3 class="text-2xl font-black text-ccg-navy mb-6 tracking-tight flex items-center gap-4">
+                            <span class="w-3 h-3 bg-ccg-teal rounded-full"></span>
+                            Visual Access
+                        </h3>
+                        <ul class="space-y-4">
+                            <li class="flex items-start gap-3">
+                                <svg class="w-5 h-5 text-ccg-gold mt-1 shrink-0" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3"
+                                        d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                <span class="text-slate-600 font-medium">High contrast color schemes for text and
+                                    interface elements.</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <svg class="w-5 h-5 text-ccg-gold mt-1 shrink-0" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3"
+                                        d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                <span class="text-slate-600 font-medium">Support for text resizing and browser zooming
+                                    up to 200%.</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <svg class="w-5 h-5 text-ccg-gold mt-1 shrink-0" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3"
+                                        d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                <span class="text-slate-600 font-medium">Descriptive alt-text for all informative
+                                    images.</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="bg-white p-12 rounded-[3.5rem] shadow-sm border border-slate-100" data-reveal>
+                        <h3 class="text-2xl font-black text-ccg-navy mb-6 tracking-tight flex items-center gap-4">
+                            <span class="w-3 h-3 bg-ccg-gold rounded-full"></span>
+                            Functional Access
+                        </h3>
+                        <ul class="space-y-4">
+                            <li class="flex items-start gap-3">
+                                <svg class="w-5 h-5 text-ccg-gold mt-1 shrink-0" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3"
+                                        d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                <span class="text-slate-600 font-medium">Logical tab order and visible keyboard focus
+                                    states.</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <svg class="w-5 h-5 text-ccg-gold mt-1 shrink-0" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3"
+                                        d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                <span class="text-slate-600 font-medium">Skip-to-content links for efficient
+                                    navigation.</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <svg class="w-5 h-5 text-ccg-gold mt-1 shrink-0" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3"
+                                        d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                <span class="text-slate-600 font-medium">Semantic HTML structure (H1-H4) for screen
+                                    reader clarity.</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="mt-20 p-12 rounded-[3.5rem] bg-ccg-navy text-white text-center relative overflow-hidden group"
+                    data-reveal>
+                    <div class="relative z-10">
+                        <h3 class="text-3xl font-black mb-6 tracking-tight">Need an Easy Read version?</h3>
+                        <p class="text-white/60 mb-10 max-w-2xl mx-auto font-medium">We provide Easy Read guides that
+                            use simple language and pictures to explain our services.</p>
+                        <a href="../resources/easy-read.html"
+                            class="bg-ccg-gold text-ccg-navy px-10 py-4 rounded-2xl font-black text-[14px] uppercase tracking-[0.2em] hover:bg-white transition-all inline-block shadow-xl shadow-black/20">View
+                            Easy Read Resources</a>
+                    </div>
+                    <div class="absolute -right-24 -bottom-24 w-64 h-64 bg-ccg-teal opacity-10 rounded-full blur-3xl">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Support Notice -->
+        <section class="py-24 bg-white relative overflow-hidden">
+            <div class="container relative z-10">
+                <div class="max-w-4xl mx-auto p-12 md:p-20 rounded-[4rem] border-2 border-slate-100 bg-[#F0F7F9] shadow-inner"
+                    data-reveal>
+                    <div class="flex flex-col md:flex-row gap-12 items-center">
+                        <div
+                            class="w-24 h-24 bg-white rounded-full flex items-center justify-center shrink-0 shadow-lg shadow-ccg-teal/10">
+                            <svg viewBox="0 0 24 24" class="w-12 h-12 text-ccg-teal" fill="currentColor">
+                                <path
+                                    d="M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M12,20C7.59,20 4,16.41 4,12C4,7.59 7.59,4 12,4C16.41,4 20,7.59 20,12C20,16.41 16.41,20 12,20M13,7H11V11H7V13H11V17H13V13H17V11H13V7Z" />
+                            </svg>
+                        </div>
+                        <div>
+                            <h2 class="text-3xl font-black text-ccg-navy mb-4 tracking-tight">Need assistance?</h2>
+                            <p class="text-slate-500 text-lg leading-relaxed font-medium mb-8">
+                                If you have trouble using any part of our website, or would like to report an
+                                accessibility issue, please contact us. We are happy to provide information in
+                                alternative formats.
+                            </p>
+                            <div class="flex flex-wrap gap-6">
+                                <a href="tel:1300591861"
+                                    class="flex items-center gap-3 text-ccg-navy font-bold hover:text-ccg-teal transition-colors">
+                                    <span
+                                        class="w-10 h-10 bg-white rounded-xl flex items-center justify-center shadow-sm">
+                                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                            <path
+                                                d="M6.62,10.79C8.06,13.62 10.38,15.94 13.21,17.38L15.41,15.18C15.69,14.9 16.08,14.82 16.43,14.93C17.55,15.3 18.75,15.5 20,15.5A1,1 0 0,1 21,16.5V20A1,1 0 0,1 20,21A17,17 0 0,1 3,4A1,1 0 0,1 4,3H7.5A1,1 0 0,1 8.5,4C8.5,5.25 8.7,6.45 9.07,7.57C9.18,7.92 9.1,8.31 8.82,8.59L6.62,10.79Z" />
+                                        </svg>
+                                    </span>
+                                    1300 591 861
+                                </a>
+                                <a href="mailto:admin@crosscaregroup.com.au"
+                                    class="flex items-center gap-3 text-ccg-navy font-bold hover:text-ccg-teal transition-colors">
+                                    <span
+                                        class="w-10 h-10 bg-white rounded-xl flex items-center justify-center shadow-sm">
+                                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                            <path
+                                                d="M20,8L12,13L4,8V6L12,11L20,6M20,4H4C2.89,4 2,4.89 2,6V18A2,2 0 0,0 4,20H20A2,2 0 0,0 22,18V6C22,4.89 21.1,4 20,4Z" />
+                                        </svg>
+                                    </span>
+                                    admin@crosscaregroup.com.au
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-ccg-navy pt-32 pb-16 text-white relative overflow-hidden">
+        <!-- Footer background accent -->
+        <div class="absolute top-0 right-0 w-1/2 h-full bg-white/[0.02] -skew-x-12 translate-x-1/4"></div>
+
+        <div class="container relative z-10">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-16 lg:gap-24">
+                <!-- Branding -->
+                <div class="space-y-10" data-reveal>
+                    <a href="../index.html" class="inline-block hover:opacity-80 transition-opacity">
+                        <img src="../images/logo.png" alt="Cross Care Group" class="h-12 w-auto brightness-0 invert">
+                    </a>
+                    <p class="text-white/60 text-[15px] leading-relaxed max-w-xs font-medium">
+                        Redefining home care through clinical excellence and profound human connection.
+                    </p>
+                    <div
+                        class="inline-flex flex-col p-8 rounded-[2rem] bg-white/[0.03] border border-white/10 shadow-2xl backdrop-blur-sm">
+                        <span class="text-[10px] font-black uppercase tracking-[0.25em] text-ccg-gold mb-2">Emergency
+                            Support</span>
+                        <span class="text-3xl font-black tracking-tighter">Call 000</span>
+                    </div>
+                </div>
+
+                <!-- Navigation -->
+                <div data-reveal>
+                    <h3 class="text-white font-black text-xs uppercase tracking-[0.3em] mb-10">Navigation</h3>
+                    <ul class="space-y-5">
+                        <li><a href="../get-support/index.html"
+                                class="text-white/50 hover:text-ccg-gold transition-colors text-[14px] font-bold uppercase tracking-widest">Get
+                                Support</a></li>
+                        <li><a href="../index.html#service"
+                                class="text-white/50 hover:text-ccg-gold transition-colors text-[14px] font-bold uppercase tracking-widest">Services</a>
+                        </li>
+                        <li><a href="../make-a-referral/index.html#referral-container"
+                                class="text-white/60 hover:text-white transition-colors text-[15px] font-medium">For
+                                Referrers</a></li>
+                        <li><a href="../why-cross-care/index.html"
+                                class="text-white/50 hover:text-ccg-gold transition-colors text-[14px] font-bold uppercase tracking-widest">Why
+                                Cross Care</a></li>
+                        <li><a href="../resources/easy-read.html"
+                                class="text-white/50 hover:text-ccg-gold transition-colors text-[14px] font-bold uppercase tracking-widest">Easy
+                                Read</a></li>
+                    </ul>
+                </div>
+
+                <!-- Compliance -->
+                <div data-reveal>
+                    <h3 class="text-white font-black text-xs uppercase tracking-[0.3em] mb-10">Compliance</h3>
+                    <ul class="space-y-5">
+                        <li><a href="../system.html#privacy"
+                                class="text-white/50 hover:text-ccg-gold transition-colors text-[14px] font-bold uppercase tracking-widest">Privacy
+                                Policy</a></li>
+                        <li><a href="../system.html#terms"
+                                class="text-white/50 hover:text-ccg-gold transition-colors text-[14px] font-bold uppercase tracking-widest">Terms
+                                of Use</a></li>
+                        <li><a href="#main"
+                                class="text-ccg-gold hover:text-white transition-colors text-[14px] font-bold uppercase tracking-widest italic">Accessibility</a>
+                        </li>
+                        <li><a href="../rights-feedback-complaints/index.html"
+                                class="text-white/50 hover:text-ccg-teal transition-colors text-[14px] font-bold uppercase tracking-widest">Rights
+                                & feedback</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact -->
+                <div data-reveal>
+                    <h3 class="text-white font-black text-xs uppercase tracking-[0.3em] mb-10">Quick Contact</h3>
+                    <div class="space-y-6 text-white/60 text-[15px]">
+                        <div class="group">
+                            <p class="text-[10px] font-black uppercase tracking-widest text-ccg-gold mb-1 opacity-50">
+                                Head Office</p>
+                            <p class="font-bold text-white group-hover:text-ccg-gold transition-colors">1300 591 861</p>
+                        </div>
+                        <div class="group">
+                            <p class="text-[10px] font-black uppercase tracking-widest text-ccg-gold mb-1 opacity-50">
+                                Email Enquiries</p>
+                            <p class="font-bold text-white group-hover:text-ccg-gold transition-colors break-all">
+                                intake@crosscare.com.au</p>
+                        </div>
+                        <div class="group">
+                            <p class="text-[10px] font-black uppercase tracking-widest text-ccg-gold mb-1 opacity-50">
+                                Availability</p>
+                            <p class="font-bold text-white">Mon–Fri: 8:30am – 5:30pm</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer Bottom -->
+            <div
+                class="mt-32 pt-10 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-8 text-[11px] font-black text-white/30 uppercase tracking-[0.3em]">
+                <p>© 2026 CROSS CARE GROUP. ALL RIGHTS RESERVED.</p>
+                <div class="flex flex-wrap justify-center gap-x-10 gap-y-4">
+                    <span class="flex items-center gap-2 hover:text-white transition-colors cursor-default"><span
+                            class="w-1.5 h-1.5 bg-ccg-teal rounded-full"></span> Queensland</span>
+                    <span class="flex items-center gap-2 hover:text-white transition-colors cursor-default"><span
+                            class="w-1.5 h-1.5 bg-ccg-gold rounded-full"></span> New South Wales</span>
+                    <span class="flex items-center gap-2 hover:text-white transition-colors cursor-default"><span
+                            class="w-1.5 h-1.5 bg-ccg-teal rounded-full"></span> South Australia</span>
+                    <span class="flex items-center gap-2 hover:text-white transition-colors cursor-default"><span
+                            class="w-1.5 h-1.5 bg-ccg-gold rounded-full"></span> Western Australia</span>
+                    <span class="flex items-center gap-2 hover:text-white transition-colors cursor-default"><span
+                            class="w-1.5 h-1.5 bg-white/20 rounded-full"></span> Tasmania</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/script.js" defer></script>
+    <script src="../js/app.js" defer></script>
+</body>
+
+</html>

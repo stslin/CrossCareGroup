@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Get Support | Cross Care Group</title>
+    <meta name="description"
+        content="Dedicated support for NDIS participants, families, and self-funded individuals. Start your journey from hospital to home today." />
+    <link rel="canonical" href="/get-support/">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../styles/main.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'ccg-navy': '#003B5C',
+                        'ccg-gold': '#FFAB40',
+                        'ccg-teal': '#0096A1',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <a class="skip-link" href="#main">Skip to main content</a>
+
+    <!-- Navigation Bar -->
+    <header id="site-header"
+        class="fixed top-0 left-0 w-full bg-white/95 backdrop-blur-md z-[1000] border-b border-navy/5 transition-all duration-500 ease-in-out h-20 lg:h-24">
+        <div class="max-w-[1500px] mx-auto px-6 h-full flex items-center justify-between transition-all duration-500">
+            <!-- Brand -->
+            <a href="../index.html" class="shrink-0 transition-transform duration-500 origin-left"
+                id="header-logo-link">
+                <img src="../images/logo.png" alt="Cross Care Group"
+                    class="h-10 lg:h-12 w-auto transition-all duration-500" id="header-logo">
+            </a>
+
+            <!-- Nav Links -->
+            <nav class="hidden lg:flex items-center gap-x-4">
+                <a href="#main_get_support"
+                    class="text-[15px] font-medium text-ccg-navy/80 hover:text-white hover:bg-ccg-gold px-4 py-2 rounded-full transition-all">Get
+                    Support</a>
+                <div class="relative group">
+                    <a href="../make-a-referral/index.html"
+                        class="text-[15px] font-medium text-ccg-navy/80 hover:text-white hover:bg-ccg-gold px-4 py-2 rounded-full transition-all flex items-center gap-1 group/parent">
+                        <span class="transition-colors group-hover/parent:text-white">For Referrers</span>
+                        <span
+                            class="text-[10px] opacity-50 transition-transform group-hover/parent:rotate-180 group-hover/parent:text-white">▼</span>
+                    </a>
+                    <!-- Dropdown -->
+                    <div
+                        class="absolute top-full left-1/2 -translate-x-1/2 mt-2 w-64 bg-white/95 backdrop-blur-md rounded-2xl shadow-xl border border-navy/5 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform translate-y-2 group-hover:translate-y-0 z-[1100] py-3 overflow-hidden">
+                        <a href="../make-a-referral/index.html#referral-guide"
+                            class="block px-6 py-3 text-[14px] font-semibold text-ccg-navy/80 hover:text-white hover:bg-ccg-gold transition-all">Referral
+                            Guide</a>
+                        <a href="../make-a-referral/index.html#referral-container"
+                            class="block px-6 py-3 text-[14px] font-semibold text-ccg-navy/80 hover:text-white hover:bg-ccg-gold transition-all">Referral
+                            Form</a>
+                    </div>
+                </div>
+                <div class="relative group">
+                    <button
+                        class="text-[15px] font-medium text-ccg-navy/80 hover:text-white hover:bg-ccg-gold px-4 py-2 rounded-full transition-all flex items-center gap-1 group/parent">
+                        <a href="../index.html#service"><span
+                                class="transition-colors group-hover/parent:text-white">Services</span>
+                            <span
+                                class="text-[10px] opacity-50 transition-transform group-hover/parent:rotate-180 group-hover/parent:text-white">▼</span>
+                        </a>
+                    </button>
+                    <!-- Dropdown Menu -->
+                    <div
+                        class="absolute top-[100%] left-0 w-64 bg-white rounded-2xl shadow-xl border border-navy/5 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform translate-y-2 group-hover:translate-y-0 z-[1100] py-3 overflow-hidden">
+                        <a href="../services/community_care.html"
+                            class="block px-6 py-3 text-[14px] font-semibold text-ccg-navy/80 hover:text-white hover:bg-ccg-gold transition-all">Community
+                            Care</a>
+                        <a href="../services/allied_health.html"
+                            class="block px-6 py-3 text-[14px] font-semibold text-ccg-navy/80 hover:text-white hover:bg-ccg-gold transition-all">Allied
+                            Health</a>
+                        <a href="../services/hospital_in_the_home.html"
+                            class="block px-6 py-3 text-[14px] font-semibold text-ccg-navy/80 hover:text-white hover:bg-ccg-gold transition-all">Hospital
+                            in the Home</a>
+                        <a href="../services/hospital_to_home.html"
+                            class="block px-6 py-3 text-[14px] font-semibold text-ccg-navy/80 hover:text-white hover:bg-ccg-gold transition-all">Hospital
+                            to Home</a>
+                        <a href="../services/rehab_in_the_home.html"
+                            class="block px-6 py-3 text-[14px] font-semibold text-ccg-navy/80 hover:text-white hover:bg-ccg-gold transition-all">Rehab
+                            in the Home</a>
+                    </div>
+                </div>
+                <a href="../why-cross-care/index.html"
+                    class="text-[15px] font-medium text-ccg-navy/80 hover:text-white hover:bg-ccg-gold px-4 py-2 rounded-full transition-all">About</a>
+                <div class="relative group">
+                    <button
+                        class="text-[15px] font-medium text-ccg-navy/80 hover:text-white hover:bg-ccg-gold px-4 py-2 rounded-full transition-all flex items-center gap-1 group/parent">
+                        <a href="../careers/jobs.html"><span
+                                class="transition-colors group-hover/parent:text-white">Careers</span>
+                            <span
+                                class="text-[10px] opacity-50 transition-transform group-hover/parent:rotate-180 group-hover/parent:text-white">▼</span></a>
+                    </button>
+                    <!-- Dropdown -->
+                    <div
+                        class="absolute top-full left-1/2 -translate-x-1/2 mt-2 w-64 bg-white/95 backdrop-blur-md rounded-2xl shadow-xl border border-navy/5 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform translate-y-2 group-hover:translate-y-0 z-[1100] py-3 overflow-hidden">
+                        <a href="../careers/jobs.html"
+                            class="block px-6 py-3 text-[14px] font-semibold text-ccg-navy/80 hover:text-white hover:bg-ccg-gold transition-all">Open
+                            Roles</a>
+                        <a href="../careers/expression-of-interest.html"
+                            class="block px-6 py-3 text-[14px] font-semibold text-ccg-navy/80 hover:text-white hover:bg-ccg-gold transition-all">Expression
+                            of Interest</a>
+                    </div>
+                </div>
+                <div class="relative group">
+                    <a href="../rights-feedback-complaints/index.html"><button
+                            class="text-[15px] font-medium text-ccg-navy/80 hover:text-white hover:bg-ccg-gold px-4 py-2 rounded-full transition-all flex items-center gap-1 group/parent">
+                            <span class="transition-colors group-hover/parent:text-white">Advocacy</span>
+                            <span
+                                class="text-[10px] opacity-50 transition-transform group-hover/parent:rotate-180 group-hover/parent:text-white">▼</span></a>
+                    </button>
+                    <!-- Advocacy Dropdown -->
+                    <div
+                        class="absolute top-[100%] left-1/2 -translate-x-1/2 mt-2 w-64 bg-white rounded-2xl shadow-xl border border-navy/5 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform translate-y-2 group-hover:translate-y-0 z-[1100] py-3 overflow-hidden">
+                        <a href="../rights-feedback-complaints/index.html#rights"
+                            class="block px-6 py-3 text-[14px] font-semibold text-ccg-navy/80 hover:text-white hover:bg-ccg-gold transition-all">Your
+                            Rights</a>
+                        <a href="../stories/index.html"
+                            class="block px-6 py-3 text-[14px] font-semibold text-ccg-navy/80 hover:text-white hover:bg-ccg-gold transition-all">Stories</a>
+                        <a href="../rights-feedback-complaints/index.html#feedback"
+                            class="block px-6 py-3 text-[14px] font-semibold text-ccg-navy/80 hover:text-white hover:bg-ccg-gold transition-all">Feedback</a>
+                        <a href="../rights-feedback-complaints/index.html#complaints"
+                            class="block px-6 py-3 text-[14px] font-semibold text-ccg-navy/80 hover:text-white hover:bg-ccg-gold transition-all">Complaints</a>
+                    </div>
+                </div>
+                <div class="relative group">
+                    <a href="../resources/easy-read.html"><button
+                            class="text-[15px] font-medium text-ccg-navy/80 hover:text-white hover:bg-ccg-gold px-4 py-2 rounded-full transition-all flex items-center gap-1 group/parent">
+                            <span class="transition-colors group-hover/parent:text-white">Resources</span>
+                            <span
+                                class="text-[10px] opacity-50 transition-transform group-hover/parent:rotate-180 group-hover/parent:text-white">▼</span>
+                        </button></a>
+                    <!-- Resources Dropdown -->
+                    <div
+                        class="absolute top-[100%] left-1/2 -translate-x-1/2 mt-2 w-64 bg-white rounded-2xl shadow-xl border border-navy/5 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform translate-y-2 group-hover:translate-y-0 z-[1100] py-3 overflow-hidden">
+                        <a href="../resources/easy-read.html"
+                            class="block px-6 py-3 text-[14px] font-semibold text-ccg-navy/80 hover:text-white hover:bg-ccg-gold transition-all">Easy
+                            Read</a>
+                        <a href="../resources/faqs.html"
+                            class="block px-6 py-3 text-[14px] font-semibold text-ccg-navy/80 hover:text-white hover:bg-ccg-gold transition-all">FAQs</a>
+                        <a href="../resources/guides.html"
+                            class="block px-6 py-3 text-[14px] font-semibold text-ccg-navy/80 hover:text-white hover:bg-ccg-gold transition-all">Guides
+                            & Checklists</a>
+                        <a href="../resources/forms.html"
+                            class="block px-6 py-3 text-[14px] font-semibold text-ccg-navy/80 hover:text-white hover:bg-ccg-gold transition-all">Forms
+                            & Documents</a>
+                        <a href="../resources/blog.html"
+                            class="block px-6 py-3 text-[14px] font-semibold text-ccg-navy/80 hover:text-white hover:bg-ccg-gold transition-all">Blog</a>
+                    </div>
+                </div>
+            </nav>
+
+            <!-- Actions -->
+            <div class="flex items-center gap-x-6">
+
+                <!-- CTA -->
+                <a href="../contact/index.html"
+                    class="hidden xl:flex items-center justify-center bg-ccg-navy text-white px-7 py-3 rounded-full font-bold text-[15px] hover:bg-ccg-gold hover:text-ccg-navy transition-all hover:-translate-y-0.5 shadow-md whitespace-nowrap">
+                    Contact
+                </a>
+                <a href="./index.html#support-form-container"
+                    class="bg-ccg-navy text-white px-7 py-3 rounded-full font-bold text-[15px] hover:bg-ccg-gold hover:text-ccg-navy transition-all hover:-translate-y-0.5 shadow-md whitespace-nowrap">
+                    Request Support
+                </a>
+
+                <!-- Mobile Toggle -->
+                <button id="mobile-menu-toggle"
+                    class="lg:hidden p-2 text-ccg-navy transition-colors hover:text-ccg-gold"
+                    aria-label="Toggle mobile menu">
+                    <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path id="menu-icon" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
+                            d="M4 6h16M4 12h16m-7 6h7"></path>
+                        <path id="close-icon" class="hidden" stroke-linecap="round" stroke-linejoin="round"
+                            stroke-width="2.5" d="M6 18L18 6M6 6l12 12"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu Overlay -->
+        <div id="mobile-menu"
+            class="fixed inset-0 bg-white z-[999] opacity-0 invisible translate-x-full transition-all duration-300 lg:hidden text-center md:text-left">
+            <!-- Fixed Back Button Overlay (Transparent background to allow in-line alignment) -->
+            <div class="fixed top-0 left-0 w-full z-[1001] px-6 h-20 flex items-center pointer-events-none">
+                <button id="mobile-menu-back"
+                    class="p-2 text-ccg-navy hover:text-ccg-gold transition-colors pointer-events-auto"
+                    aria-label="Close menu">
+                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M15 19l-7-7 7-7">
+                        </path>
+                    </svg>
+                </button>
+            </div>
+            <div class="flex flex-col h-full pt-6 px-6 pb-10 overflow-y-auto bg-white relative">
+                <nav class="flex flex-col gap-y-4 mb-10">
+                    <a href="#main_get_support"
+                        class="text-2xl font-bold text-ccg-navy hover:text-ccg-gold transition-colors py-2">Get
+                        Support</a>
+                    <div class="flex flex-col gap-y-3 pt-2">
+                        <span class="text-xs font-black uppercase tracking-widest text-ccg-navy/30">For Referrers</span>
+                        <a href="../make-a-referral/index.html#referral-guide"
+                            class="text-lg font-semibold text-ccg-navy hover:text-ccg-gold transition-colors pl-4">Referral
+                            Guide</a>
+                        <a href="../make-a-referral/index.html#referral-container"
+                            class="text-lg font-semibold text-ccg-navy hover:text-ccg-gold transition-colors pl-4">Referral
+                            Form</a>
+                    </div>
+                    <div class="flex flex-col gap-y-3 pt-2">
+                        <a href="../index.html#service"><span
+                                class="text-xs font-black uppercase tracking-widest text-ccg-navy/30">Services</span></a>
+                        <a href="../services/community_care.html"
+                            class="text-lg font-semibold text-ccg-navy hover:text-ccg-gold transition-colors pl-4">Community
+                            Care</a>
+                        <a href="../services/allied_health.html"
+                            class="text-lg font-semibold text-ccg-navy hover:text-ccg-gold transition-colors pl-4">Allied
+                            Health</a>
+                        <a href="../services/hospital_in_the_home.html"
+                            class="text-lg font-semibold text-ccg-navy hover:text-ccg-gold transition-colors pl-4">Hospital
+                            in the Home</a>
+                        <a href="../services/hospital_to_home.html"
+                            class="text-lg font-semibold text-ccg-navy hover:text-ccg-gold transition-colors pl-4">Hospital
+                            to Home</a>
+                        <a href="../services/rehab_in_the_home.html"
+                            class="text-lg font-semibold text-ccg-navy hover:text-ccg-gold transition-colors pl-4">Rehab
+                            in the Home</a>
+                    </div>
+                    <a href="../why-cross-care/index.html"
+                        class="text-2xl font-bold text-ccg-navy hover:text-ccg-gold transition-colors py-2">About</a>
+                    <div class="flex flex-col gap-y-3 pt-2">
+                        <a href="../careers/jobs.html"><span
+                                class="text-xs font-black uppercase tracking-widest text-ccg-navy/30">Careers</span></a>
+                        <a href="../careers/jobs.html"
+                            class="text-lg font-semibold text-ccg-navy hover:text-ccg-gold transition-colors pl-4">Open
+                            Roles</a>
+                        <a href="../careers/expression-of-interest.html"
+                            class="text-lg font-semibold text-ccg-navy hover:text-ccg-gold transition-colors pl-4">Expression
+                            of Interest</a>
+                    </div>
+                    <div class="flex flex-col gap-y-3 pt-2">
+                        <span class="text-xs font-black uppercase tracking-widest text-ccg-navy/30">Advocacy</span>
+                        <a href="../rights-feedback-complaints/index.html#rights"
+                            class="text-lg font-semibold text-ccg-navy hover:text-ccg-gold transition-colors pl-4">Your
+                            Rights</a>
+                        <a href="../stories/index.html"
+                            class="text-lg font-semibold text-ccg-navy hover:text-ccg-gold transition-colors pl-4">Stories</a>
+                        <a href="../rights-feedback-complaints/index.html#feedback"
+                            class="text-lg font-semibold text-ccg-navy hover:text-ccg-gold transition-colors pl-4">Feedback</a>
+                        <a href="../rights-feedback-complaints/index.html#complaints"
+                            class="text-lg font-semibold text-ccg-navy hover:text-ccg-gold transition-colors pl-4">Complaints</a>
+                    </div>
+                    <div class="flex flex-col gap-y-3 pt-2 items-center">
+                        <a href="../resources/easy-read.html"><span
+                                class="text-xs font-black uppercase tracking-widest text-ccg-navy/30">Resources</span></a>
+                        <a href="../resources/easy-read.html"
+                            class="text-lg font-semibold text-ccg-navy hover:text-ccg-gold transition-colors">Easy
+                            Read</a>
+                        <a href="../resources/faqs.html"
+                            class="text-lg font-semibold text-ccg-navy hover:text-ccg-gold transition-colors">FAQs</a>
+                        <a href="../resources/guides.html"
+                            class="text-lg font-semibold text-ccg-navy hover:text-ccg-gold transition-colors">Guides
+                            & Checklists</a>
+                        <a href="../resources/forms.html"
+                            class="text-lg font-semibold text-ccg-navy hover:text-ccg-gold transition-colors">Forms
+                            & Documents</a>
+                        <a href="../resources/blog.html"
+                            class="text-lg font-semibold text-ccg-navy hover:text-ccg-gold transition-colors">Blog</a>
+                    </div>
+                </nav>
+
+                <div class="mt-auto pt-6">
+                    <a href="#support-form-container"
+                        class="inline-block bg-ccg-navy text-white text-center py-4 px-10 rounded-full font-bold text-base hover:bg-ccg-gold transition-all shadow-md">
+                        Request Support
+                    </a>
+                </div>
+            </div>
+        </div>
+        </div>
+    </header>
+
+    <script>
+        const header = document.getElementById('site-header');
+        const logo = document.getElementById('header-logo');
+        const mobileMenuToggle = document.getElementById('mobile-menu-toggle');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const menuIcon = document.getElementById('menu-icon');
+        const closeIcon = document.getElementById('close-icon');
+        let isMenuOpen = false;
+
+        function toggleMenu() {
+            isMenuOpen = !isMenuOpen;
+            if (isMenuOpen) {
+                mobileMenu.classList.remove('opacity-0', 'invisible', 'translate-x-full');
+                menuIcon.classList.add('hidden');
+                closeIcon.classList.remove('hidden');
+                document.body.style.overflow = 'hidden';
+            } else {
+                mobileMenu.classList.add('opacity-0', 'invisible', 'translate-x-full');
+                menuIcon.classList.remove('hidden');
+                closeIcon.classList.add('hidden');
+                document.body.style.overflow = '';
+            }
+        }
+
+        mobileMenuToggle.addEventListener('click', toggleMenu);
+
+        const mobileMenuBack = document.getElementById('mobile-menu-back');
+        mobileMenuBack?.addEventListener('click', toggleMenu);
+
+        // Close menu on link click
+        mobileMenu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                if (isMenuOpen) toggleMenu();
+            });
+        });
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 20) {
+                header.classList.remove('h-20', 'lg:h-24');
+                header.classList.add('h-16', 'shadow-sm');
+                logo.classList.remove('h-10', 'lg:h-12');
+                logo.classList.add('h-8');
+            } else {
+                header.classList.add('h-20', 'lg:h-24');
+                header.classList.remove('h-16', 'shadow-sm');
+                logo.classList.add('h-10', 'lg:h-12');
+                logo.classList.remove('h-8');
+            }
+        });
+    </script>
+
+    <main id="main_get_support">
+        <section class="section hero text-center !pt-32 lg:!pt-44 !pb-10">
+            <div class="container max-w-4xl mx-auto flex flex-col items-center">
+                <div class="section-header" style="margin-bottom: 30px; text-align: center;">
+                    <span class="section-kicker">Start Here</span>
+                    <h1 class="text-5xl md:text-6xl font-black text-ccg-navy leading-tight" style="margin-top: 10px;">
+                        Get the support you need to <span class="text-ccg-gold">live safely</span> at home.</h1>
+                    <div class="section-accent" style="margin: 30px auto 0 auto;"></div>
+                </div>
+                <p class="text-xl text-slate-500 leading-relaxed font-medium mx-auto">
+                    Whether you are transitioning from hospital or looking for long-term community support,
+                    we provide a clear pathway and clinically governed care tailored to your goals.
+                </p>
+            </div>
+        </section>
+
+        <!-- Support Segments -->
+        <section class="section section--sand !py-12 lg:!py-20" style="background: #F8FAFB;">
+            <div class="container">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <!-- NDIS -->
+                    <div class="location-card" data-reveal>
+                        <div class="location-icon">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z">
+                                </path>
+                            </svg>
+                        </div>
+                        <h3>NDIS Participants</h3>
+                        <p>Specialised nursing and high-intensity supports for people with dynamic health needs. We work
+                            with your Support Coordinator to ensure your plan is optimised.</p>
+                        <span class="location-tag">Clinical Governance</span>
+                    </div>
+
+                    <!-- Families -->
+                    <div class="location-card" data-reveal>
+                        <div class="location-icon">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z">
+                                </path>
+                            </svg>
+                        </div>
+                        <h3>Families & Carers</h3>
+                        <p>Reliable respite and coordinated care that gives you peace of mind. We speak plain language
+                            and keep you informed every step of the way.</p>
+                        <span class="location-tag">Peace of Mind</span>
+                    </div>
+
+                    <!-- Self-Funded -->
+                    <div class="location-card" data-reveal>
+                        <div class="location-icon">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z">
+                                </path>
+                            </svg>
+                        </div>
+                        <h3>Private & Self-Funded</h3>
+                        <p>Premium home care services for those who want immediate, high-standard clinical support
+                            without the wait.</p>
+                        <span class="location-tag">Immediate Access</span>
+                    </div>
+
+                    <!-- Insurers -->
+                    <div class="location-card" data-reveal>
+                        <div class="location-icon">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z">
+                                </path>
+                            </svg>
+                        </div>
+                        <h3>Insurers & Managers</h3>
+                        <p>Clinical governance and outcome-focused reporting for TAC, WorkCover, and private health
+                            clients.</p>
+                        <span class="location-tag">Expert Reporting</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Form Section -->
+        <section class="section relative overflow-hidden pt-32 lg:pt-56 pb-16 lg:pb-32" id="support-form">
+            <!-- Background Layers -->
+            <div class="absolute inset-0 z-0">
+                <div
+                    class="absolute top-0 left-0 w-full h-96 bg-gradient-to-b from-white via-white to-transparent opacity-100 z-10">
+                </div>
+                <!-- High-Visibility Professional Healthcare Background -->
+                <img src="../images/healthcare-support-bg.png" alt=""
+                    class="w-full h-full object-cover opacity-[0.6] lg:opacity-[0.75] scale-100 transition-opacity duration-1000 grayscale-[20%]">
+                <!-- Precision overlays to keep focus on form while revealing imagery -->
+                <div class="absolute inset-0 bg-gradient-to-b from-white/95 via-white/5 to-white/30"></div>
+                <div
+                    class="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(0,59,92,0.05),transparent_80%)]">
+                </div>
+            </div>
+
+            <!-- Decorative Accents -->
+            <div class="bg-layer bg-dot-pattern opacity-20"></div>
+
+            <!-- Strategic Glow for Depth -->
+            <div class="glow-orb orb--1 !opacity-[0.15] !-top-1/4 !-right-1/4 !bg-ccg-teal scale-150"></div>
+            <div class="glow-orb orb--2 !opacity-[0.1] !-bottom-1/4 !-left-1/4 !bg-ccg-navy scale-150"></div>
+
+            <div class="container relative z-10" id="support-form-container">
+                <div style="max-width: 850px; margin-inline: auto;">
+                    <div class="section-header !mb-16" data-reveal>
+                        <div
+                            class="inline-flex items-center gap-3 bg-white px-5 py-2 rounded-full mb-6 border border-slate-100 shadow-md mx-auto">
+                            <span class="w-2 h-2 bg-ccg-teal rounded-full animate-pulse"></span>
+                            <span class="text-[11px] font-black uppercase tracking-[0.25em] text-ccg-navy/70">Clinical
+                                Coordinator Online</span>
+                        </div>
+                        <h2 class="section-title !text-5xl md:!text-6xl !mb-6">How can we help?</h2>
+                        <div class="section-accent !h-1 !w-24"></div>
+                    </div>
+                    <p class="lead !text-ccg-navy/80 !font-black !mb-20 text-center !opacity-100 tracking-tight"
+                        data-reveal>Tell us a little about
+                        what you're looking for, and one of our clinical coordinators will reach out.</p>
+
+                    <!-- Solid White Form with Maximum Pop-out -->
+                    <form id="support-request-form" action="javascript:void(0);" method="POST"
+                        data-ccg-form="submit-support"
+                        class="space-y-10 bg-white rounded-[2.5rem] md:rounded-[4rem] p-6 md:p-16 shadow-[0_120px_200px_-40px_rgba(0,59,92,0.4)] border border-white relative z-20 transition-all duration-700 hover:shadow-[0_140px_240px_-40px_rgba(0,59,92,0.45)]">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                            <div class="space-y-2">
+                                <label for="name"
+                                    class="block text-[11px] font-black uppercase tracking-[0.2em] text-ccg-navy/80 ml-1">Full
+                                    Name *</label>
+                                <input type="text" id="name" name="Title" required
+                                    class="w-full px-6 py-4 bg-slate-50/50 border border-slate-100 rounded-2xl text-ccg-navy/80 placeholder:text-slate-300 focus:outline-none focus:ring-4 focus:ring-ccg-teal/10 focus:border-ccg-teal focus:bg-white transition-all duration-500 font-medium"
+                                    placeholder="e.g. John Smith">
+                            </div>
+                            <div class="space-y-2">
+                                <label for="phone"
+                                    class="block text-[11px] font-black uppercase tracking-[0.2em] text-ccg-navy/80 ml-1">Phone
+                                    Number *</label>
+                                <input type="tel" id="phone" name="req_phone" required
+                                    class="w-full px-6 py-4 bg-slate-50/50 border border-slate-100 rounded-2xl text-ccg-navy/80 placeholder:text-slate-300 focus:outline-none focus:ring-4 focus:ring-ccg-teal/10 focus:border-ccg-teal focus:bg-white transition-all duration-500 font-medium"
+                                    placeholder="e.g. 0400 000 000">
+                            </div>
+                        </div>
+
+                        <div class="space-y-2">
+                            <label for="email"
+                                class="block text-[11px] font-black uppercase tracking-[0.2em] text-ccg-navy/80 ml-1">Email
+                                Address</label>
+                            <input type="email" id="email" name="req_email"
+                                class="w-full px-6 py-4 bg-slate-50/50 border border-slate-100 rounded-2xl text-ccg-navy/80 placeholder:text-slate-300 focus:outline-none focus:ring-4 focus:ring-ccg-teal/10 focus:border-ccg-teal focus:bg-white transition-all duration-500 font-medium"
+                                placeholder="john@example.com">
+                        </div>
+
+                        <div class="space-y-2">
+                            <label for="support-type"
+                                class="block text-[11px] font-black uppercase tracking-[0.2em] text-ccg-navy/80 ml-1">Support
+                                type *</label>
+                            <div class="relative">
+                                <select id="support-type" name="req_support_type" required
+                                    class="w-full px-6 py-4 bg-slate-50/50 border border-slate-100 rounded-2xl text-ccg-navy/80 focus:outline-none focus:ring-4 focus:ring-ccg-teal/10 focus:border-ccg-teal focus:bg-white transition-all duration-500 font-medium appearance-none">
+                                    <option value="" disabled selected>Select an option...</option>
+                                    <option value="NDIS Support">NDIS Support</option>
+                                    <option value="Hospital to Home transition">Hospital to Home transition</option>
+                                    <option value="Aged Care / Home Care Package">Aged Care / Home Care Package</option>
+                                    <option value="Private / Self-funded">Private / Self-funded</option>
+                                    <option value="Other enquiry">Other enquiry</option>
+                                </select>
+                                <div
+                                    class="absolute right-6 top-1/2 -translate-y-1/2 pointer-events-none text-ccg-navy/80/30">
+                                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3"
+                                            d="M19 9l-7 7-7-7"></path>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="space-y-2">
+                            <label for="message"
+                                class="block text-[11px] font-black uppercase tracking-[0.2em] text-ccg-navy/80 ml-1">Tell
+                                us what support you’re looking for *</label>
+                            <textarea id="message" name="req_support_details" rows="4" required
+                                class="w-full px-6 py-4 bg-slate-50/50 border border-slate-100 rounded-2xl text-ccg-navy/80 placeholder:text-slate-300 focus:outline-none focus:ring-4 focus:ring-ccg-teal/10 focus:border-ccg-teal focus:bg-white transition-all duration-500 font-medium resize-none"
+                                placeholder="Briefly describe your needs..."></textarea>
+                        </div>
+
+                        <div class="bg-[#F8FAFB] p-6 rounded-2xl border border-slate-100/50">
+                            <p class="text-[13px] text-slate-500 leading-relaxed">
+                                <span
+                                    class="inline-block px-2 py-0.5 bg-ccg-teal/10 text-ccg-teal rounded text-[10px] font-bold uppercase tracking-wider mr-2">Privacy
+                                    Note</span>
+                                Your information is handled securely according to our <a href="../system.html#privacy"
+                                    class="text-ccg-gold font-bold hover:text-ccg-teal transition-colors">Privacy
+                                    Policy</a>. We only collect the minimum information necessary to help clarify the
+                                next steps.
+                            </p>
+                        </div>
+
+                        <div class="text-center pt-2">
+                            <button type="submit"
+                                class="w-full bg-ccg-navy text-white py-5 rounded-2xl font-black text-[15px] uppercase tracking-[0.2em] hover:bg-ccg-gold hover:text-ccg-navy translate-all duration-500 hover:-translate-y-1 shadow-xl shadow-ccg-navy/20 active:scale-[0.98] group">
+                                Submit Request
+                                <span class="inline-block ml-2 transition-transform group-hover:translate-x-1">→</span>
+                            </button>
+                            <p class="text-[11px] font-bold text-slate-400 mt-6 uppercase tracking-widest">
+                                <span class="text-ccg-gold">Next step:</span> We will contact you to discuss your needs
+                            </p>
+                        </div>
+                    </form>
+
+                    <div class="flex justify-center mt-10">
+                        <div
+                            class="inline-flex items-center gap-4 bg-white px-8 py-4 rounded-3xl border border-slate-100 shadow-xl shadow-ccg-navy/5 relative z-20">
+                            <span class="flex h-3 w-3 relative">
+                                <span
+                                    class="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75"></span>
+                                <span class="relative inline-flex rounded-full h-3 w-3 bg-red-600"></span>
+                            </span>
+                            <p class="text-[12px] font-black text-ccg-navy uppercase tracking-[0.15em] m-0">
+                                <span class="text-red-600">Emergency:</span> If this is an emergency, please call <span
+                                    class="bg-red-50 text-red-700 px-2.5 py-1 rounded-lg border border-red-100/50 mx-1">000</span>
+                                immediately
+                            </p>
+                        </div>
+                    </div>
+                </div>
+        </section>
+    </main>
+
+    <footer class="bg-ccg-navy pt-24 pb-12 text-white">
+        <div class="container">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-24">
+                <!-- Branding -->
+                <div class="space-y-8">
+                    <a href="../" class="inline-block">
+                        <img src="../images/logo.png" alt="Cross Care Group" class="h-10 w-auto brightness-0 invert">
+                    </a>
+                    <p class="text-white/60 text-sm leading-relaxed max-w-xs">
+                        Providing True Care through clinical excellence and profound human connection.
+                    </p>
+                    <div class="inline-flex flex-col p-6 rounded-2xl bg-[#003B5C]/50 border border-white/10 shadow-lg"
+                        style="background: rgba(255,255,255,0.03);">
+                        <span class="text-[10px] font-black uppercase tracking-[0.2em] text-ccg-gold mb-1">Emergency
+                            Support</span>
+                        <span class="text-xl font-black">Call 000</span>
+                    </div>
+                </div>
+
+                <!-- Links 1 -->
+                <div>
+                    <h3 class="text-white font-black text-xs uppercase tracking-[0.2em] mb-8">Navigation</h3>
+                    <ul class="space-y-4">
+                        <li><a href="../get-support/index.html"
+                                class="text-white/60 hover:text-white transition-colors text-[15px] font-medium">Get
+                                Support</a></li>
+                        <li><a href="../index.html#service"
+                                class="text-white/60 hover:text-white transition-colors text-[15px] font-medium">Services</a>
+                        </li>
+                        <li><a href="../make-a-referral/index.html#referral-container"
+                                class="text-white/60 hover:text-white transition-colors text-[15px] font-medium">For
+                                Referrers</a></li>
+                        <li><a href="../why-cross-care/index.html"
+                                class="text-white/60 hover:text-white transition-colors text-[15px] font-medium">Why
+                                Cross Care</a></li>
+                        <li><a href="../resources/easy-read.html"
+                                class="text-white/60 hover:text-white transition-colors text-[15px] font-medium">Easy
+                                Read</a></li>
+                        <li><a href="../resources/blog.html"
+                                class="text-white/60 hover:text-white transition-colors text-[15px] font-medium">Blog</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Links 2 -->
+                <div>
+                    <h3 class="text-white font-black text-xs uppercase tracking-[0.2em] mb-8">Compliance</h3>
+                    <ul class="space-y-4">
+                        <li><a href="../system.html#privacy"
+                                class="text-white/60 hover:text-white transition-colors text-[15px] font-medium">Privacy
+                                Policy</a></li>
+                        <li><a href="../system.html#terms"
+                                class="text-white/60 hover:text-white transition-colors text-[15px] font-medium">Terms
+                                of Use</a></li>
+                        <li><a href="../accessibility/index.html"
+                                class="text-white/60 hover:text-white transition-colors text-[15px] font-medium">Accessibility</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Contact -->
+                <div>
+                    <h3 class="text-white font-black text-xs uppercase tracking-[0.2em] mb-8">Contact</h3>
+                    <div class="space-y-4 text-white/60 text-[15px]">
+                        <p class="font-medium"><strong class="text-white font-bold">Phone:</strong> 1300 591 861</p>
+                        <p class="font-medium"><strong class="text-white font-bold">Email:</strong>
+                            intake@crosscare.com.au</p>
+                        <p class="font-medium"><strong class="text-white font-bold">Hours:</strong> Mon–Fri: 8:30am –
+                            5:30pm</p>
+                    </div>
+                </div>
+            </div>
+
+            <div
+                class="mt-24 pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-6 text-[10px] font-bold text-white/30 uppercase tracking-widest">
+                <p>© 2025 CROSS CARE GROUP. ALL RIGHTS RESERVED.</p>
+                <div class="flex gap-8">
+                    <span>QUEENSLAND</span>
+                    <span>NEW SOUTH WALES</span>
+                    <span>SOUTH AUSTRALIA</span>
+                    <span>WESTERN AUSTRALIA</span>
+                    <span>TASMANIA</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/script.js" defer></script>
+    <script src="../js/app.js" defer></script>
+    <script src="../js/forms.js" defer></script>
+</body>
+
+</html>
