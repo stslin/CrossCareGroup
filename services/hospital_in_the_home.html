@@ -36,13 +36,14 @@
 
     <!-- Navigation Bar -->
     <header id="site-header"
-        class="fixed top-0 left-0 w-full bg-white/95 backdrop-blur-md z-[1000] border-b border-navy/5 transition-all duration-500 ease-in-out h-20 lg:h-24">
+        class="fixed top-0 left-0 w-full bg-[#003B5C] lg:bg-white z-[1000] border-b border-white/10 lg:border-navy/5 transition-all duration-500 ease-in-out h-24 lg:h-32">
         <div class="max-w-[1500px] mx-auto px-6 h-full flex items-center justify-between transition-all duration-500">
             <!-- Brand -->
-            <a href="../index.html" class="shrink-0 transition-transform duration-500 origin-left"
+            <a href="../index.html"
+                class="shrink-0 transition-transform duration-500 origin-left bg-white px-3 py-1.5 rounded-xl lg:bg-transparent lg:p-0"
                 id="header-logo-link">
                 <img src="../images/logo.png" alt="Cross Care Group"
-                    class="h-10 lg:h-12 w-auto transition-all duration-500" id="header-logo">
+                    class="h-12 lg:h-16 w-auto transition-all duration-500" id="header-logo">
             </a>
 
             <!-- Nav Links -->
@@ -173,8 +174,7 @@
                 </a>
 
                 <!-- Mobile Toggle -->
-                <button id="mobile-menu-toggle"
-                    class="lg:hidden p-2 text-ccg-navy transition-colors hover:text-ccg-gold"
+                <button id="mobile-menu-toggle" class="lg:hidden p-2 text-white transition-colors hover:text-ccg-gold"
                     aria-label="Toggle mobile menu">
                     <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path id="menu-icon" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
@@ -188,11 +188,11 @@
 
         <!-- Mobile Menu Overlay -->
         <div id="mobile-menu"
-            class="fixed inset-0 bg-white z-[999] opacity-0 invisible translate-x-full transition-all duration-300 lg:hidden text-center md:text-left">
+            class="fixed inset-0 bg-[#003B5C] z-[999] opacity-0 invisible translate-x-full transition-all duration-300 lg:hidden text-center md:text-left">
             <!-- Fixed Back Button Overlay (Transparent background to allow in-line alignment) -->
             <div class="fixed top-0 left-0 w-full z-[1001] px-6 h-20 flex items-center pointer-events-none">
                 <button id="mobile-menu-back"
-                    class="p-2 text-ccg-navy hover:text-ccg-gold transition-colors pointer-events-auto"
+                    class="p-2 text-white hover:text-ccg-gold transition-colors pointer-events-auto"
                     aria-label="Close menu">
                     <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M15 19l-7-7 7-7">
@@ -200,100 +200,89 @@
                     </svg>
                 </button>
             </div>
-            <div class="flex flex-col h-full pt-6 px-6 pb-10 overflow-y-auto bg-white relative">
-                <nav class="flex flex-col gap-y-4 mb-10">
+            <div class="flex flex-col h-full pt-20 px-6 pb-10 overflow-y-auto bg-[#003B5C] relative">
+                <nav class="flex flex-col gap-y-4 mb-10 items-center">
                     <a href="../get-support/index.html"
-                        class="text-2xl font-bold text-ccg-navy hover:text-ccg-gold transition-colors py-2">Get
+                        class="text-3xl font-black text-white hover:text-ccg-gold transition-colors py-2">Get
                         Support</a>
-                    <div class="flex flex-col gap-y-3 pt-2">
-                        <span class="text-xs font-black uppercase tracking-widest text-ccg-navy/30">For Referrers</span>
+                    <div class="flex flex-col gap-y-3 pt-4">
+                        <span class="text-xs font-black uppercase tracking-widest text-white/40">For Referrers</span>
                         <a href="../make-a-referral/index.html#referral-guide"
-                            class="text-lg font-semibold text-ccg-navy hover:text-ccg-gold transition-colors pl-4">Referral
+                            class="text-xl font-bold text-white hover:text-ccg-gold transition-colors">Referral
                             Guide</a>
                         <a href="../make-a-referral/index.html#referral-container"
-                            class="text-lg font-semibold text-ccg-navy hover:text-ccg-gold transition-colors pl-4">Referral
+                            class="text-xl font-bold text-white hover:text-ccg-gold transition-colors">Referral
                             Form</a>
                     </div>
-                    <div class="flex flex-col gap-y-3 pt-2">
-                        <span class="text-xs font-black uppercase tracking-widest text-ccg-navy/30">Services</span>
+                    <div class="flex flex-col gap-y-3 pt-8">
+                        <span class="text-xs font-black uppercase tracking-widest text-white/40">Services</span>
                         <a href="./community_care.html"
-                            class="text-lg font-semibold text-ccg-navy hover:text-ccg-gold transition-colors pl-4">Community
+                            class="text-xl font-bold text-white hover:text-ccg-gold transition-colors">Community
                             Care</a>
                         <a href="./allied_health.html"
-                            class="text-lg font-semibold text-ccg-navy hover:text-ccg-gold transition-colors pl-4">Allied
+                            class="text-xl font-bold text-white hover:text-ccg-gold transition-colors">Allied
                             Health</a>
                         <!-- <a href="./hospital_in_the_home.html"
-                            class="text-lg font-semibold text-ccg-navy hover:text-ccg-gold transition-colors pl-4">Hospital
+                            class="text-xl font-bold text-white hover:text-ccg-gold transition-colors">Hospital
                             in the Home</a> -->
                         <a href="./hospital_to_home.html"
-                            class="text-lg font-semibold text-ccg-navy hover:text-ccg-gold transition-colors pl-4">Hospital
+                            class="text-xl font-bold text-white hover:text-ccg-gold transition-colors">Hospital
                             to Home</a>
                         <!-- <a href="./rehab_in_the_home.html"
-                            class="text-lg font-semibold text-ccg-navy hover:text-ccg-gold transition-colors pl-4">Rehab
+                            class="text-xl font-bold text-white hover:text-ccg-gold transition-colors">Rehab
                             in the Home</a> -->
                     </div>
-                    <div class="flex flex-col gap-y-3 pt-2">
-                        <span class="text-xs font-black uppercase tracking-widest text-ccg-navy/30">Resources</span>
+                    <div class="flex flex-col gap-y-3 pt-8">
+                        <span class="text-xs font-black uppercase tracking-widest text-white/40">Resources</span>
                         <a href="../resources/easy-read.html"
-                            class="text-lg font-semibold text-ccg-navy hover:text-ccg-gold transition-colors pl-4">Easy
+                            class="text-xl font-bold text-white hover:text-ccg-gold transition-colors">Easy
                             Read</a>
                         <a href="../resources/faqs.html"
-                            class="text-lg font-semibold text-ccg-navy hover:text-ccg-gold transition-colors pl-4">FAQs</a>
+                            class="text-xl font-bold text-white hover:text-ccg-gold transition-colors">FAQs</a>
                         <a href="../resources/guides.html"
-                            class="text-lg font-semibold text-ccg-navy hover:text-ccg-gold transition-colors pl-4">Guides
+                            class="text-xl font-bold text-white hover:text-ccg-gold transition-colors">Guides
                             & Checklists</a>
                         <a href="../resources/forms.html"
-                            class="text-lg font-semibold text-ccg-navy hover:text-ccg-gold transition-colors pl-4">Forms
+                            class="text-xl font-bold text-white hover:text-ccg-gold transition-colors">Forms
                             & Documents</a>
                         <a href="../resources/blog.html"
-                            class="text-lg font-semibold text-ccg-navy hover:text-ccg-gold transition-colors pl-4">Blog</a>
+                            class="text-xl font-bold text-white hover:text-ccg-gold transition-colors">Blog</a>
                     </div>
                     <a href="../why-cross-care/index.html"
-                        class="text-2xl font-bold text-ccg-navy hover:text-ccg-gold transition-colors py-2">About</a>
-                    <div class="flex flex-col gap-y-3 pt-2">
-                        <span class="text-xs font-black uppercase tracking-widest text-ccg-navy/30">Careers</span>
+                        class="text-3xl font-black text-white hover:text-ccg-gold transition-colors py-2 pt-4">About</a>
+                    <div class="flex flex-col gap-y-3 pt-8">
+                        <span class="text-xs font-black uppercase tracking-widest text-white/40">Careers</span>
                         <a href="../careers/jobs.html"
-                            class="text-lg font-semibold text-ccg-navy hover:text-ccg-gold transition-colors pl-4">Open
+                            class="text-xl font-bold text-white hover:text-ccg-gold transition-colors">Open
                             Roles</a>
                         <a href="../careers/expression-of-interest.html"
-                            class="text-lg font-semibold text-ccg-navy hover:text-ccg-gold transition-colors pl-4">Expression
+                            class="text-xl font-bold text-white hover:text-ccg-gold transition-colors">Expression
                             of Interest</a>
                     </div>
-                    <div class="flex flex-col gap-y-3 pt-2">
-                        <span class="text-xs font-black uppercase tracking-widest text-ccg-navy/30">Advocacy</span>
+                    <div class="flex flex-col gap-y-3 pt-8">
+                        <span class="text-xs font-black uppercase tracking-widest text-white/40">Advocacy</span>
                         <a href="../rights-feedback-complaints/index.html#rights"
-                            class="text-lg font-semibold text-ccg-navy hover:text-ccg-gold transition-colors pl-4">Your
+                            class="text-xl font-bold text-white hover:text-ccg-gold transition-colors">Your
                             Rights</a>
                         <a href="../stories/index.html"
-                            class="text-lg font-semibold text-ccg-navy hover:text-ccg-gold transition-colors pl-4">Stories</a>
+                            class="text-xl font-bold text-white hover:text-ccg-gold transition-colors">Stories</a>
                         <a href="../rights-feedback-complaints/index.html#feedback"
-                            class="text-lg font-semibold text-ccg-navy hover:text-ccg-gold transition-colors pl-4">Feedback</a>
+                            class="text-xl font-bold text-white hover:text-ccg-gold transition-colors">Feedback</a>
                         <a href="../rights-feedback-complaints/index.html#complaints"
-                            class="text-lg font-semibold text-ccg-navy hover:text-ccg-gold transition-colors pl-4">Complaints</a>
+                            class="text-xl font-bold text-white hover:text-ccg-gold transition-colors">Complaints</a>
                     </div>
-                    <div class="flex flex-col gap-y-3 pt-2 items-center">
-                        <a href="../resources/easy-read.html"
-                            class="text-xs font-black uppercase tracking-widest text-ccg-navy/30">Resources</a>
-                        <a href="../resources/easy-read.html"
-                            class="text-lg font-semibold text-ccg-navy hover:text-ccg-gold transition-colors">Easy
-                            Read</a>
-                        <a href="../resources/faqs.html"
-                            class="text-lg font-semibold text-ccg-navy hover:text-ccg-gold transition-colors">FAQs</a>
-                        <a href="../resources/guides.html"
-                            class="text-lg font-semibold text-ccg-navy hover:text-ccg-gold transition-colors">Guides
-                            & Checklists</a>
-                        <a href="../resources/forms.html"
-                            class="text-lg font-semibold text-ccg-navy hover:text-ccg-gold transition-colors">Forms
-                            & Documents</a>
+
+                    <div class="flex flex-col gap-y-4 pt-10 w-full">
+                        <a href="../contact/index.html"
+                            class="bg-ccg-gold text-ccg-navy px-8 py-4 rounded-full font-bold text-[18px] hover:bg-white transition-all text-center">
+                            Contact Us
+                        </a>
+                        <a href="../get-support/index.html#support-form-container"
+                            class="bg-ccg-gold text-ccg-navy px-8 py-4 rounded-full font-bold text-[18px] hover:bg-white transition-all text-center">
+                            Request Support
+                        </a>
                     </div>
                 </nav>
-
-                <div class="mt-auto pt-6">
-                    <a href="../get-support/index.html#support-form-container"
-                        class="inline-block bg-ccg-navy text-white text-center py-4 px-10 rounded-full font-bold text-base hover:bg-ccg-gold hover:text-ccg-navy transition-all shadow-md">
-                        Request Support
-                    </a>
-                </div>
             </div>
         </div>
         </div>
