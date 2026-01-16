@@ -60,44 +60,6 @@ const blogPosts = [
             { type: 'paragraph', content: 'A good discharge plan includes a reconciliation of your medications, a schedule for follow-up appointments, and a clear understanding of your activity limits. It also identifies who will be helping with meals, cleaning, and personal care during those first few days.' },
             { type: 'paragraph', content: 'By being proactive and asking the right questions, you can significantly reduce the risk of needing to return to the hospital and focus entirely on your recovery.' }
         ]
-    },
-    {
-        id: 'hospital-in-the-home-understanding-the-pathway',
-        category: 'hospital-in-the-home',
-        categoryLabel: 'Hospital-in-the-Home',
-        title: 'Understanding the Hospital-in-the-Home pathway',
-        date: 'Jan 12, 2026',
-        readTime: '7 min',
-        image: '../images/blog-hospital-in-the-home.png',
-        excerpt: 'A general explainer of Hospital-in-the-Home style programs, what needs to be in place, and the importance of governance.',
-        body: [
-            { type: 'paragraph', content: 'Hospital-in-the-Home (HITH) is an innovative service that allows patients to receive acute-level hospital care in the comfort and privacy of their own home. It’s an increasingly popular option for conditions that require frequent clinical monitoring but don’t necessarily need a hospital bed.' },
-            { type: 'heading', content: 'Hospital care without the hospital ward' },
-            { type: 'paragraph', content: 'Under a HITH model, you remain under the care of a hospital specialist, but the actual treatment—such as IV antibiotics or complex wound care—is delivered at home by highly trained community nurses.' },
-            { type: 'paragraph', content: 'This eliminates the stress of being in a hospital environment, which can often lead to better rest, improved appetite, and a faster overall recovery.' },
-            { type: 'heading', content: 'Safety and monitoring' },
-            { type: 'paragraph', content: 'Safety is the paramount consideration for HITH. It requires clear clinical governance, protocol-driven treatment pathways, and 24/7 escalation readiness. Not every condition is suitable for HITH, and eligibility is carefully assessed based on clinical stability and home safety.' },
-            { type: 'paragraph', content: 'When implemented correctly, HITH provides a seamless extension of hospital care, allowing you to recover in the place where you feel most comfortable.' }
-        ]
-    },
-    {
-        id: 'rehab-in-the-home-supporting-recovery',
-        category: 'rehab-in-the-home',
-        categoryLabel: 'Rehab-in-the-Home',
-        title: 'Rehab-in-the-Home: supporting recovery with goals',
-        date: 'Jan 12, 2026',
-        readTime: '7 min',
-        image: '../images/blog-rehab-in-the-home.png',
-        excerpt: 'How home-based rehab can support function and confidence after illness or injury, and what to prepare.',
-        body: [
-            { type: 'paragraph', content: 'Rehabilitation is about regaining function and confidence after an illness, injury, or surgery. While rehab wards have their place, "Rehab-in-the-Home" offers a unique advantage: you learn to master skills and movements in the exact environment where you need them daily.' },
-            { type: 'heading', content: 'Goal-focused recovery' },
-            { type: 'paragraph', content: 'Successful rehab is built on clear, personalized goals. Instead of just "getting stronger," we focus on "being able to make a cup of tea safely" or "navigating the front steps to get the mail." These "real-world" milestones are much more motivating and carry more meaning.' },
-            { type: 'paragraph', content: 'Our team of therapists and nursing staff work together to create a program that challenges you while ensuring you always feel safe and supported.' },
-            { type: 'heading', content: 'The role of the home environment' },
-            { type: 'paragraph', content: 'Your home is the ultimate gym. Every doorway, chair, and hallway is a potential tool for recovery. By practicing your exercises and daily tasks in your own space, your progress translates directly into your everyday life.' },
-            { type: 'paragraph', content: 'It also allows your family and carers to be directly involved, learning how to safely support your journey towards independence.' }
-        ]
     }
 ];
 
