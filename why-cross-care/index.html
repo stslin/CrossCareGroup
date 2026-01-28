@@ -384,11 +384,11 @@
                 </div>
             </div>
 
-            <div class="container max-w-[1400px] relative z-10">
-                <div class="grid lg:grid-cols-2 gap-16 items-center">
-                    <div class="max-w-[700px]" data-reveal>
+            <div class="container max-w-[1600px] relative z-10">
+                <div class="grid lg:grid-cols-12 gap-8 lg:gap-12 items-center">
+                    <div class="lg:col-span-5 text-center lg:text-left" data-reveal>
 
-                        <nav class="flex items-center gap-2 mb-6 text-[11px] font-black uppercase tracking-[0.2em] text-ccg-navy/40"
+                        <nav class="flex items-center justify-center lg:justify-start gap-2 mb-6 text-[11px] font-black uppercase tracking-[0.2em] text-ccg-navy/40"
                             aria-label="Breadcrumb">
                             <span class="hover:text-ccg-gold transition-colors">About</span>
                             <span class="w-1 h-1 bg-ccg-navy/20 rounded-full"></span>
@@ -399,17 +399,17 @@
                             <span class="text-ccg-navy font-bold text-sm">Empowering Independence</span>
                         </div>
                         <h1
-                            class="font-black text-ccg-navy mb-8 leading-[1.1] tracking-tight text-[clamp(2.5rem,8vw,5.5rem)] hero-title-animate">
+                            class="font-black text-ccg-navy mb-6 leading-[1.1] tracking-tight text-[clamp(2.5rem,6vw,4rem)] hero-title-animate">
                             Human Depth. <br />
                             <span class="text-ccg-gold">Clinical Precision.</span>
                         </h1>
 
                         <p
-                            class="lead mb-12 max-w-2xl opacity-80 text-lg text-slate-500 font-medium leading-relaxed max-w-2xl mx-auto">
+                            class="lead mb-12 opacity-80 text-lg text-slate-500 font-medium leading-relaxed max-w-2xl mx-auto lg:mx-0">
                             We don't just provide support; we bridge transitions. Our mission is to ensure every client
                             returns home with safety, speed, and dignity.
                         </p>
-                        <div class="flex flex-wrap gap-5">
+                        <div class="flex flex-wrap gap-5 justify-center lg:justify-start">
                             <a href="../get-support/"
                                 class="group relative bg-ccg-navy text-white px-10 py-5 rounded-full font-bold text-lg hover:bg-ccg-gold transition-all duration-300 shadow-xl shadow-navy/20 flex items-center gap-3 overflow-hidden">
                                 <span class="relative z-10 text-white group-hover:text-white">Get Support Now</span>
@@ -421,13 +421,20 @@
                             </a>
                         </div>
                     </div>
-                    <div class="relative hidden lg:block" data-reveal>
-
-                        <div class="relative z-10 rounded-[4rem] overflow-hidden shadow-2xl border-8 border-white">
-                            <img src="../images/about-hero.png" alt="Clinical connection" class="w-full h-auto">
+                    <div class="relative mt-8 lg:mt-0 lg:col-span-7" data-reveal>
+                        <!-- YouTube Video Player -->
+                        <div
+                            class="relative z-10 rounded-[2rem] lg:rounded-[3rem] overflow-hidden shadow-2xl border-4 lg:border-8 border-white aspect-video">
+                            <iframe src="https://www.youtube.com/embed/gP6ScTuPmM4"
+                                title="Cross Care Group - Our Mission" class="w-full h-full" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                            </iframe>
                         </div>
                         <!-- Decorative Frame -->
-                        <div class="absolute -inset-4 bg-ccg-gold/10 rounded-[4.5rem] -rotate-2 -z-10"></div>
+                        <div
+                            class="absolute -inset-2 lg:-inset-4 bg-ccg-gold/10 rounded-[2.5rem] lg:rounded-[4rem] -rotate-2 -z-10">
+                        </div>
                     </div>
                 </div>
             </div>
@@ -528,28 +535,6 @@
                             </ul>
                         </div>
                     </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Video Section -->
-        <section class="section !pt-0 !pb-20 bg-slate-50 relative overflow-hidden">
-            <div class="container max-w-[1200px] relative z-10" data-reveal>
-                <div id="video-wrapper"
-                    class="relative group rounded-[3rem] overflow-hidden glass-card shadow-2xl border-8 border-white aspect-video max-w-[1000px] mx-auto cursor-pointer">
-
-
-                    <!-- YouTube Iframe -->
-                    <div id="player-target" class="absolute inset-0 z-10">
-                        <iframe width="1905" height="748" src="https://www.youtube.com/embed/gP6ScTuPmM4"
-                            title="Cross Care Group-Our Mission" class="w-full h-full" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                    </div>
-                </div>
-                <div class="text-center mt-12">
-                    <p class="text-[10px] font-black uppercase tracking-[0.5em] text-ccg-navy/40">Clinical Excellence •
-                        Human Depth • System Integrity</p>
                 </div>
             </div>
         </section>
