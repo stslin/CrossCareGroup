@@ -78,15 +78,23 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // 6. Navigation Active State Highlight
-    const currentPath = window.location.pathname;
+    const currentPath = window.location.pathname.toLowerCase();
     const navLinks = document.querySelectorAll('#site-header nav a, #mobile-menu nav a');
 
     // Simple helper to check if a link points to the current page
     const isCurrentPage = (linkUrl) => {
-        const normalize = (path) => path.replace(/\/index\.html$/, '/').replace(/\/$/, '') || '/';
+        const normalize = (path) => {
+            if (!path) return '';
+            return path.toLowerCase()
+                .replace(/\/index\.html$/, '')
+                .replace(/\/$/, '') || '/';
+        };
         const normalizedCurrent = normalize(currentPath);
         const normalizedLink = normalize(linkUrl.pathname);
-        return normalizedCurrent === normalizedLink;
+
+        // Match if paths are identical or if one is a sub-path of another (for nested pages)
+        return normalizedCurrent === normalizedLink ||
+            (normalizedLink !== '/' && normalizedCurrent.startsWith(normalizedLink + '/'));
     };
 
     navLinks.forEach(link => {
@@ -95,24 +103,32 @@ document.addEventListener('DOMContentLoaded', () => {
 
             // 6a. Apply Active State
             if (isCurrentPage(linkUrl)) {
-                link.classList.add('active-nav-link');
-                link.style.color = '#FFAB40'; // ccg-gold
+                // EXCLUSION: Don't highlight links that are just anchors on the current page
+                // (e.g., "#service" on the Home page should stay navy)
+                const isSamePageAnchor = linkUrl.hash &&
+                    linkUrl.pathname.replace(/\/index\.html$/, '/') === window.location.pathname.replace(/\/index\.html$/, '/');
 
-                // Highlight parent if in dropdown
-                const parentGroup = link.closest('.group');
-                if (parentGroup) {
-                    const parentLink = parentGroup.querySelector('a');
-                    if (parentLink && parentLink !== link) {
-                        parentLink.style.color = '#FFAB40';
+                if (!isSamePageAnchor) {
+                    link.classList.add('active-nav-link');
+                    link.style.color = '#FFAB40'; // ccg-gold
+                    link.style.fontWeight = '800'; // Make it slightly bolder
+
+                    // Highlight parent if in dropdown
+                    const parentGroup = link.closest('.group');
+                    if (parentGroup) {
+                        const parentLink = parentGroup.querySelector('a');
+                        if (parentLink && parentLink !== link) {
+                            parentLink.style.color = '#FFAB40';
+                            parentLink.style.fontWeight = '800';
+                        }
                     }
                 }
             }
 
             // 6b. Desktop Hover Background Effect (lg screens only)
             if (window.innerWidth >= 1024 && link.closest('#site-header')) {
+                link.style.transition = 'all 0.3s ease';
                 link.style.borderRadius = '0.75rem';
-                link.style.paddingTop = '0.5rem';
-                link.style.paddingBottom = '0.5rem';
 
                 link.addEventListener('mouseenter', () => {
                     link.style.backgroundColor = '#003B5C'; // ccg-navy
@@ -126,7 +142,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 });
             }
         } catch (e) {
-            console.error('Nav logic error:', e);
+            // Silently handle cross-origin or invalid URLs
         }
     });
 });
