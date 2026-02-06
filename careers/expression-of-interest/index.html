@@ -60,14 +60,14 @@
 
     <!-- Navigation Bar -->
     <header id="site-header"
-        class="fixed top-0 left-0 w-full bg-[#003B5C] lg:bg-white z-[1000] border-b border-white/10 lg:border-navy/5 transition-all duration-500 ease-in-out h-24 lg:h-32">
+        class="fixed top-0 left-0 w-full bg-[#003B5C] lg:bg-white z-[1000] border-b border-white/10 lg:border-navy/5 transition-all duration-500 ease-in-out h-16 lg:h-20">
         <div class="max-w-[1500px] mx-auto px-6 h-full flex items-center justify-between transition-all duration-500">
             <!-- Brand -->
             <a href="../../"
                 class="shrink-0 transition-transform duration-500 origin-left bg-white px-3 py-1.5 rounded-xl lg:bg-transparent lg:p-0"
                 id="header-logo-link">
                 <img src="../../images/logo.png" alt="Cross Care Group"
-                    class="h-12 lg:h-16 w-auto transition-all duration-500" id="header-logo">
+                    class="h-8 lg:h-10 w-auto transition-all duration-500" id="header-logo">
             </a>
 
             <!-- Nav Links -->
@@ -313,21 +313,21 @@
 
         window.addEventListener('scroll', () => {
             if (window.scrollY > 20) {
-                header.classList.remove('h-24', 'lg:h-32');
-                header.classList.add('h-20', 'lg:h-24', 'shadow-lg');
-                logo.classList.remove('h-12', 'lg:h-16');
-                logo.classList.add('h-10', 'lg:h-12');
+                header.classList.remove('h-16', 'lg:h-20');
+                header.classList.add('h-14', 'lg:h-16', 'shadow-lg');
+                logo.classList.remove('h-8', 'lg:h-10');
+                logo.classList.add('h-7', 'lg:h-8');
             } else {
-                header.classList.add('h-24', 'lg:h-32');
-                header.classList.remove('h-20', 'lg:h-24', 'shadow-lg');
-                logo.classList.add('h-12', 'lg:h-16');
-                logo.classList.remove('h-10', 'lg:h-12');
+                header.classList.add('h-16', 'lg:h-20');
+                header.classList.remove('h-14', 'lg:h-16', 'shadow-lg');
+                logo.classList.add('h-8', 'lg:h-10');
+                logo.classList.remove('h-7', 'lg:h-8');
             }
         });
     </script>
     <main id="main" class="site-main">
 
-        <section class="hero relative overflow-hidden !pt-24 lg:!pt-32 lg:!pb-20">
+        <section class="hero relative overflow-hidden !pt-12 lg:!pt-16 lg:!pb-12">
             <div class="bg-layer bg-dot-pattern opacity-10"></div>
             <div class="glow-orb orb--2" style="bottom: -15%; left: -10%; opacity: 0.5;"></div>
             <div class="container hero-grid !pt-0 !pb-0 text-center lg:text-left">
@@ -339,7 +339,7 @@
                             Interest</span>
                     </div>
                     <h1 id="eoi-title"
-                        class="text-5xl md:text-6xl lg:text-7xl font-black text-ccg-navy mb-8 leading-[1.0] tracking-tight">
+                        class="text-5xl md:text-6xl lg:text-7xl font-black text-ccg-navy mb-4 leading-[1.0] tracking-tight">
                         Tell us how you can <br /> <span class="text-ccg-gold">make a difference</span></h1>
                     <p class="lead text-lg text-slate-500 font-medium leading-relaxed max-w-2xl mx-auto lg:mx-0">Tell us
                         what role you're looking for and where you're based. We'll follow up if there's a match for
