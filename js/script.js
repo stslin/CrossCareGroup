@@ -81,68 +81,79 @@ document.addEventListener('DOMContentLoaded', () => {
     const currentPath = window.location.pathname.toLowerCase();
     const navLinks = document.querySelectorAll('#site-header nav a, #mobile-menu nav a');
 
-    // Simple helper to check if a link points to the current page
-    const isCurrentPage = (linkUrl) => {
-        const normalize = (path) => {
-            if (!path) return '';
-            return path.toLowerCase()
-                .replace(/\/index\.html$/, '')
-                .replace(/\/$/, '') || '/';
-        };
-        const normalizedCurrent = normalize(currentPath);
-        const normalizedLink = normalize(linkUrl.pathname);
+    // Normalize path helper
+    const normalizePath = (path) => {
+        if (!path) return '';
+        return path.toLowerCase()
+            .replace(/\/index\.html$/, '')
+            .replace(/\/$/, '') || '/';
+    };
 
-        // Match if paths are identical or if one is a sub-path of another (for nested pages)
-        return normalizedCurrent === normalizedLink ||
-            (normalizedLink !== '/' && normalizedCurrent.startsWith(normalizedLink + '/'));
+    const normalizedCurrent = normalizePath(currentPath);
+
+    // Helper to check if a link points to the current page
+    const isActive = (link) => {
+        try {
+            const linkUrl = new URL(link.href, window.location.origin);
+            const normalizedLink = normalizePath(linkUrl.pathname);
+
+            // 1. Exact match (Home or deep link matching current)
+            const isExact = normalizedCurrent === normalizedLink;
+
+            // 2. Sub-page match (e.g., /services/ highlights /services)
+            // We only allow this for paths deeper than / to avoid Home matching everything
+            const isSubPage = (normalizedLink !== '/' &&
+                normalizedLink.length > 2 &&
+                normalizedCurrent.startsWith(normalizedLink + '/'));
+
+            if (isExact || isSubPage) {
+                // EXCLUSION: Don't highlight if it's just an anchor on the same page
+                // We check if the pathname (after removing index.html) is identical
+                const currentFull = window.location.pathname.replace(/\/index\.html$/, '/').replace(/\/$/, '') || '/';
+                const linkFull = linkUrl.pathname.replace(/\/index\.html$/, '/').replace(/\/$/, '') || '/';
+
+                if (linkUrl.hash && currentFull === linkFull) {
+                    return false;
+                }
+                return true;
+            }
+        } catch (e) { return false; }
+        return false;
     };
 
     navLinks.forEach(link => {
-        try {
-            const linkUrl = new URL(link.href, window.location.origin);
+        // 6a. Apply Initial Active State
+        if (isActive(link)) {
+            link.classList.add('active-nav-link');
+            link.style.color = '#FFAB40'; // ccg-gold
+            link.style.fontWeight = '800';
 
-            // 6a. Apply Active State
-            if (isCurrentPage(linkUrl)) {
-                // EXCLUSION: Don't highlight links that are just anchors on the current page
-                // (e.g., "#service" on the Home page should stay navy)
-                const isSamePageAnchor = linkUrl.hash &&
-                    linkUrl.pathname.replace(/\/index\.html$/, '/') === window.location.pathname.replace(/\/index\.html$/, '/');
-
-                if (!isSamePageAnchor) {
-                    link.classList.add('active-nav-link');
-                    link.style.color = '#FFAB40'; // ccg-gold
-                    link.style.fontWeight = '800'; // Make it slightly bolder
-
-                    // Highlight parent if in dropdown
-                    const parentGroup = link.closest('.group');
-                    if (parentGroup) {
-                        const parentLink = parentGroup.querySelector('a');
-                        if (parentLink && parentLink !== link) {
-                            parentLink.style.color = '#FFAB40';
-                            parentLink.style.fontWeight = '800';
-                        }
-                    }
+            // Highlight parent if in dropdown
+            const parentGroup = link.closest('.group');
+            if (parentGroup) {
+                const parentLink = parentGroup.querySelector('a');
+                if (parentLink && parentLink !== link) {
+                    parentLink.style.color = '#FFAB40';
+                    parentLink.style.fontWeight = '800';
                 }
             }
+        }
 
-            // 6b. Desktop Hover Background Effect (lg screens only)
-            if (window.innerWidth >= 1024 && link.closest('#site-header')) {
-                link.style.transition = 'all 0.3s ease';
-                link.style.borderRadius = '0.75rem';
+        // 6b. Desktop Hover Effect
+        if (window.innerWidth >= 1024 && link.closest('#site-header')) {
+            link.style.transition = 'all 0.3s ease';
+            link.style.borderRadius = '0.75rem';
 
-                link.addEventListener('mouseenter', () => {
-                    link.style.backgroundColor = '#003B5C'; // ccg-navy
-                    link.style.color = '#FFAB40'; // ccg-gold
-                });
+            link.addEventListener('mouseenter', () => {
+                link.style.backgroundColor = '#003B5C'; // ccg-navy
+                link.style.color = '#FFAB40'; // ccg-gold
+            });
 
-                link.addEventListener('mouseleave', () => {
-                    link.style.backgroundColor = '';
-                    // Return to active color if it's the current page, otherwise reset
-                    link.style.color = isCurrentPage(linkUrl) ? '#FFAB40' : '';
-                });
-            }
-        } catch (e) {
-            // Silently handle cross-origin or invalid URLs
+            link.addEventListener('mouseleave', () => {
+                link.style.backgroundColor = '';
+                // Only return to gold if truly active for this page
+                link.style.color = isActive(link) ? '#FFAB40' : '';
+            });
         }
     });
 });
