@@ -1,0 +1,11 @@
+/* Tailwind CSS — build input file */
+/* This file is compiled by: npx @tailwindcss/cli -i styles/tailwind.src.css -o styles/tailwind.css --minify */
+
+@import "tailwindcss";
+
+/* Brand colour tokens — replaces the inline tailwind.config on every page */
+@theme {
+  --color-ccg-navy: #003B5C;
+  --color-ccg-gold: #FFAB40;
+  --color-ccg-teal: #0096A1;
+}

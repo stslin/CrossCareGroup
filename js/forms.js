@@ -277,9 +277,6 @@
 
       if (attachments.length > 0) payload.attachments = attachments;
 
-      // DEBUG: Log payload for verification
-      console.log('Submitting Payload:', JSON.stringify(payload, null, 2));
-
       // Fetch
       const response = await fetch(config.url, {
         method: 'POST',

@@ -12,7 +12,19 @@ jobs:
     steps:
       - name: Get latest code
         uses: actions/checkout@v4
-      
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build Tailwind CSS
+        run: npm run build:css
+
       - name: Sync files
         uses: SamKirkland/FTP-Deploy-Action@v4.3.4
         with:
@@ -26,8 +38,13 @@ jobs:
             **/.git*/**
             **/node_modules/**
             .env*
+            package.json
+            package-lock.json
+            styles/tailwind.src.css
             QA_CHECKLIST.md
+            CLAUDE.md
             README*.md
             SECURITY*.md
             POWER_AUTOMATE*.md
+            Documentation/**
             **/.DS_Store
