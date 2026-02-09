@@ -124,30 +124,38 @@ document.addEventListener('DOMContentLoaded', () => {
     const isActive = (link) => {
         try {
             const linkUrl = new URL(link.href, window.location.origin);
-            const normalizedLink = normalizePath(linkUrl.pathname);
+            const linkPath = normalizePath(linkUrl.pathname);
 
-            // 1. Exact match (Home or deep link matching current)
-            const isExact = normalizedCurrent === normalizedLink;
-
-            // 2. Sub-page match (e.g., /services/ highlights /services)
-            // We only allow this for paths deeper than / to avoid Home matching everything
-            const isSubPage = (normalizedLink !== '/' &&
-                normalizedLink.length > 2 &&
-                normalizedCurrent.startsWith(normalizedLink + '/'));
-
-            if (isExact || isSubPage) {
-                // EXCLUSION: Don't highlight if it's just an anchor on the same page
-                // We check if the pathname (after removing index.html) is identical
-                const currentFull = window.location.pathname.replace(/\/index\.html$/, '/').replace(/\/$/, '') || '/';
-                const linkFull = linkUrl.pathname.replace(/\/index\.html$/, '/').replace(/\/$/, '') || '/';
-
-                if (linkUrl.hash && currentFull === linkFull) {
-                    return false;
+            // 1. Special Handling for Get Support Page
+            if (normalizedCurrent === '/get-support') {
+                // If we are on /get-support, we want the link with href="#main_get_support" (or similar) to be active
+                if (linkUrl.hash === '#main_get_support' || linkPath === '/get-support') {
+                    return true;
                 }
+            }
+
+            // 2. Exact match
+            if (normalizedCurrent === linkPath) {
+                // Generically, if a link has a hash, we often don't want to highlight it as the "Active Page" link
+                // because it might be a section link. ex: /about#team vs /about
+                // HOWEVER, if it's the main nav link (like Get Support often is), we DO want it.
+
+                // If we are on the exact page, and the link has ONLY a pathname (no hash), it's definitely the active link.
+                if (!linkUrl.hash) return true;
+
+                // If it DOES have a hash, we only want it if we haven't already found a "better" match? 
+                // Or maybe we just blacklist common internal anchors?
+                // For this specific site structure, let's treat hash links on the same page as NOT active unless handled above.
+                return false;
+            }
+
+            // 3. Sub-page match
+            if (linkPath !== '/' && normalizedCurrent.startsWith(linkPath + '/')) {
                 return true;
             }
+
+            return false;
         } catch (e) { return false; }
-        return false;
     };
 
     navLinks.forEach(link => {
