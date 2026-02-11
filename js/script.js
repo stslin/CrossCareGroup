@@ -251,4 +251,37 @@ document.addEventListener('DOMContentLoaded', () => {
             mobileToggle.setAttribute('aria-expanded', 'false');
         }
     }
+
+});
+
+// 8. Referral Tab Logic (Global)
+// Defined outside DOMContentLoaded to ensure availability for onclick events
+function switchReferralTab(tab) {
+    const communityBtn = document.getElementById('tab-community');
+    const alliedBtn = document.getElementById('tab-allied');
+    const communityWrap = document.getElementById('community-wrapper');
+    const alliedWrap = document.getElementById('allied-wrapper');
+
+    const activeBtnClasses = ['bg-ccg-navy', 'text-ccg-gold', 'border-ccg-gold/50', 'shadow-[0_15px_30px_-5px_rgba(0,59,92,0.15)]'];
+    const inactiveBtnClasses = ['bg-white', 'text-ccg-navy/40', 'border-ccg-navy', 'shadow-sm'];
+
+    const setActive = (btn) => { btn.classList.add(...activeBtnClasses); btn.classList.remove(...inactiveBtnClasses); };
+    const setInactive = (btn) => { btn.classList.add(...inactiveBtnClasses); btn.classList.remove(...activeBtnClasses); };
+
+    if (tab === 'community') {
+        communityWrap.classList.remove('hidden');
+        alliedWrap.classList.add('hidden');
+        setActive(communityBtn);
+        setInactive(alliedBtn);
+    } else {
+        alliedWrap.classList.remove('hidden');
+        communityWrap.classList.add('hidden');
+        setActive(alliedBtn);
+        setInactive(communityBtn);
+    }
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+    document.getElementById('tab-community')?.addEventListener('click', () => switchReferralTab('community'));
+    document.getElementById('tab-allied')?.addEventListener('click', () => switchReferralTab('allied'));
 });

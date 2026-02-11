@@ -32,3 +32,6 @@ jobs:
             POWER_AUTOMATE*.md
             Documentation/
             **/.DS_Store
+            dev_server.py
+            .vscode/
+            .gemini/
