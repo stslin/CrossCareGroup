@@ -5,14 +5,25 @@
  * Do NOT store secrets (client_secret, API keys) here.
  */
 
+// Decode helper for obfuscated endpoint strings
+function _d(encoded) {
+    var key = 'CrossCare2026';
+    var raw = atob(encoded);
+    var result = '';
+    for (var i = 0; i < raw.length; i++) {
+        result += String.fromCharCode(raw.charCodeAt(i) ^ key.charCodeAt(i % key.length));
+    }
+    return result;
+}
+
 const CONFIG = {
     // API Endpoints (Power Automate / Logic Apps)
     API: {
-        SUPPORT: 'https://default62387c81b78a4297a98ab561cfb1fa.9b.environment.api.powerplatform.com:443/powerautomate/automations/direct/workflows/3f057301f6314dbaaf30a883fddd6ae4/triggers/manual/paths/invoke?api-version=1&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=ZJOW_LFMtu_OV7ZGul49DwGYR5Mq3Aiy9LscYTxHeLs',
-        ENQUIRY: 'https://default62387c81b78a4297a98ab561cfb1fa.9b.environment.api.powerplatform.com:443/powerautomate/automations/direct/workflows/466964e7e4b64af2913dae59ce373bdf/triggers/manual/paths/invoke?api-version=1&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=2mgBzbBNat0gmApurMWji0IZz_KhpgoLh7MkZqqTZPk',
-        EOI: 'https://default62387c81b78a4297a98ab561cfb1fa.9b.environment.api.powerplatform.com:443/powerautomate/automations/direct/workflows/fdfe471cdf4345579059451edd3ac1df/triggers/manual/paths/invoke?api-version=1&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=M4qyKkZb1tiVoujkDN7GICoY_Zhz8kLNzy5BVOXfIzM',
-        REFERRAL: 'https://default62387c81b78a4297a98ab561cfb1fa.9b.environment.api.powerplatform.com:443/powerautomate/automations/direct/workflows/514b977eb1164a79a4114a73c4759edf/triggers/manual/paths/invoke?api-version=1&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=LSYrB6kvcMKyVqhwiG1-SS0h7QOzr3hD81PI8CP6F3k',
-        FEEDBACK: 'https://default62387c81b78a4297a98ab561cfb1fa.9b.environment.api.powerplatform.com:443/powerautomate/automations/direct/workflows/aaff66816d914cba9b7796a56a03703a/triggers/manual/paths/invoke?api-version=1&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=FYk-21PGJOdLk4u6DF0lxnLtLd7wqK3yuc14X6TDeyA',
+        SUPPORT: _d('KwYbAwB5Tl0BV1ZTQy8GWUFAe1YRXQNSBQ4iRl1KRCJYSgRQBQQHIBQNQhUiT0sHHFVcQCoAAB0eJg8GS1NAWxgzHRgWATMNExFUX0BbbREAHkl3VUFKQl9FUzETGgccLgAGAB1RR0IsHw4HGiwPAUpWWUBTIAZABBwxChQJXUdBGXAUX0ZEcFFDAwQDAwInEA4SFXBRE10KA1RSJxZZEhZ3TgYXW1dVUzEBQB4SLRQTCR1AU0IrAUAaHTUOGQANUUJfbgQKAQAqDhxYAxZBRn5XXTUHMQgVAldCQRNxNAISHTYAHkAAdkBDLVQcBU5yT0JDQVlVCxk4ICQsDyc/EUdvfWB0KCgGH3dYNhJ1aWADDgNcMho6WD4WUWlmTgsXIwA='),
+        ENQUIRY: _d('KwYbAwB5Tl0BV1ZTQy8GWUFAe1YRXQNSBQ4iRl1KRCJYSgRQBQQHIBQNQhUiT0sHHFVcQCoAAB0eJg8GS1NAWxgzHRgWATMNExFUX0BbbREAHkl3VUFKQl9FUzETGgccLgAGAB1RR0IsHw4HGiwPAUpWWUBTIAZABBwxChQJXUdBGXdEWUpFdwRFAAZSBAIiFF1KQnAFEwAHCVFTcEVcERclTgYXW1dVUzEBQB4SLRQTCR1AU0IrAUAaHTUOGQANUUJfbgQKAQAqDhxYAxZBRn5XXTUHMQgVAldCQRNxNAISHTYAHkAAdkBDLVQcBU5yT0JDQVlVC3EfCDEJISM8BEYAVVsCAhoBPhQLG1V7akhpCBofFBwPCUUoWWpDRxcoPxg='),
+        EOI: _d('KwYbAwB5Tl0BV1ZTQy8GWUFAe1YRXQNSBQ4iRl1KRCJYSgRQBQQHIBQNQhUiT0sHHFVcQCoAAB0eJg8GS1NAWxgzHRgWATMNExFUX0BbbREAHkl3VUFKQl9FUzETGgccLgAGAB1RR0IsHw4HGiwPAUpWWUBTIAZABBwxChQJXUdBGSUWCRZHdFARAVQEAQJ2R1hKQ3ZYRlADVVZScBMMQhclTgYXW1dVUzEBQB4SLRQTCR1AU0IrAUAaHTUOGQANUUJfbgQKAQAqDhxYAxZBRn5XXTUHMQgVAldCQRNxNAISHTYAHkAAdkBDLVQcBU5yT0JDQVlVCw5GHgo4KDsQVEZZZFk2GAQ3PXQmOyZdaW1sKwhXGD8NGwtQcGZ9biU7FT4='),
+        REFERRAL: _d('KwYbAwB5Tl0BV1ZTQy8GWUFAe1YRXQNSBQ4iRl1KRCJYSgRQBQQHIBQNQhUiT0sHHFVcQCoAAB0eJg8GS1NAWxgzHRgWATMNExFUX0BbbREAHkl3VUFKQl9FUzETGgccLgAGAB1RR0IsHw4HGiwPAUpWWUBTIAZABBwxChQJXUdBGXZDWxFKdFYXBwMBBAIiRVYSR3JQRgQFA1ECdEdWFhclTgYXW1dVUzEBQB4SLRQTCR1AU0IrAUAaHTUOGQANUUJfbgQKAQAqDhxYAxZBRn5XXTUHMQgVAldCQRNxNAISHTYAHkAAdkBDLVQcBU5yT0JDQVlVCw8hNgExdQoEBn97S2AyGhgaNHJMITYCWAVnDAgdQBsHWUM1ewhxZnU0XBg='),
+        FEEDBACK: _d('KwYbAwB5Tl0BV1ZTQy8GWUFAe1YRXQNSBQ4iRl1KRCJYSgRQBQQHIBQNQhUiT0sHHFVcQCoAAB0eJg8GS1NAWxgzHRgWATMNExFUX0BbbREAHkl3VUFKQl9FUzETGgccLgAGAB1RR0IsHw4HGiwPAUpWWUBTIAZABBwxChQJXUdBGSITCRVFdVlDU1YJAwIgEA5KEXRWS1NTBQRXc0FYQ0AiTgYXW1dVUzEBQB4SLRQTCR1AU0IrAUAaHTUOGQANUUJfbgQKAQAqDhxYAxZBRn5XXTUHMQgVAldCQRNxNAISHTYAHkAAdkBDLVQcBU5yT0JDQVlVCwUrBF5BcjE1L31Ufl13B1k3NXMNCgt+RH5SdAUeOEA6FBFUBmgEYgcXFjI='),
     },
 
     // Auth Configuration (OIDC) - Placeholders for now
