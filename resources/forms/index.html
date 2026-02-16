@@ -33,6 +33,13 @@
             }
         }
     </style>
+    <script>
+        // Hook up the button
+        document.getElementById("downloadBtn_Resources").addEventListener("click", (e) => {
+            e.preventDefault(); // keep page as-is
+            forceDownload("/files/myfile.pdf", "myfile.pdf"); // <-- change this path/name
+        });
+    </script>
 </head>
 
 <body id="forms">
@@ -325,7 +332,7 @@
                         <h3 class="text-2xl font-black text-ccg-navy mb-4">Service catalogue</h3>
                         <p class="text-ccg-navy/60 leading-relaxed mb-8">Detailed overview of our service inclusions and
                             care pathways.</p>
-                        <a href="../../files/CCG - Service Catalogue 2026 1.pdf"
+                        <a href="../../files/CCG - Service Catalogue 2026 1.pdf" download
                             class="inline-flex items-center gap-2 text-ccg-teal font-bold hover:underline">
                             Download PDF <span>→</span>
                         </a>
