@@ -3,7 +3,7 @@
 
 <head>
     <meta http-equiv="Content-Security-Policy"
-        content="default-src 'self'; script-src 'self' https://www.googletagmanager.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https://*.jotform.com https://*.jotfor.ms https://www.google-analytics.com https://www.googletagmanager.com https://img.youtube.com; frame-src 'self' https://www.youtube.com https://youtube.com https://www.youtube-nocookie.com https://form.jotform.com https://jotform.com https://*.jotform.com https://*.jotfor.ms blob:; connect-src 'self' https://*.powerplatform.com https://*.azure.com https://*.jotform.com https://*.jotfor.ms; object-src 'none'; base-uri 'self'; form-action 'self' https://*.jotform.com; frame-ancestors 'none'; upgrade-insecure-requests;">
+        content="default-src 'self'; script-src 'self' https://www.googletagmanager.com https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdn.jsdelivr.net; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https://*.jotform.com https://*.jotfor.ms https://www.google-analytics.com https://www.googletagmanager.com https://img.youtube.com; frame-src 'self' https://www.youtube.com https://youtube.com https://www.youtube-nocookie.com https://form.jotform.com https://jotform.com https://*.jotform.com https://*.jotfor.ms blob:; connect-src 'self' https://*.powerplatform.com https://*.azure.com https://*.jotform.com https://*.jotfor.ms; object-src 'none'; base-uri 'self'; form-action 'self' https://*.jotform.com; frame-ancestors 'none'; upgrade-insecure-requests;">
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1" name="viewport" />
     <title>Privacy Policy | Cross Care Group</title>
@@ -81,6 +81,8 @@
             animation: float 4s ease-in-out infinite;
         }
     </style>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orestbida/cookieconsent@v3.0.1/dist/cookieconsent.css">
+    <link rel="stylesheet" href="../../css/cookie-consent-overrides.css">
 </head>
 
 <body class="bg-slate-50 min-h-screen hero-gradient">
@@ -388,53 +390,317 @@
         </div>
 
         <div class="glass-card p-10 lg:p-16 rounded-[3.5rem] prose max-w-none">
-            <section>
-                <h3>1. Commitment to Privacy</h3>
-                <p>We respect your privacy and handle personal information with the highest level of clinical integrity.
-                    This document outlines our data standards for the Cross Care clinical ecosystem.</p>
-            </section>
 
-            <div class="grid md:grid-cols-2 gap-8 my-12">
-                <div class="p-8 bg-slate-50 rounded-3xl border border-navy/5">
-                    <h4 class="text-ccg-navy font-black text-lg mb-4 flex items-center gap-3">
-                        <div class="w-8 h-8 rounded-lg bg-ccg-teal/10 flex items-center justify-center">
-                            <svg class="w-4 h-4 text-ccg-teal" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3"
-                                    d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
-                            </svg>
-                        </div>
-                        Data Collection
-                    </h4>
-                    <p class="text-sm">We collect information provided during intake and clinical transition tasks,
-                        including clinical records and assessment notes required for safe discharge.</p>
-                </div>
-                <div class="p-8 bg-slate-50 rounded-3xl border border-navy/5">
-                    <h4 class="text-ccg-navy font-black text-lg mb-4 flex items-center gap-3">
-                        <div class="w-8 h-8 rounded-lg bg-ccg-gold/10 flex items-center justify-center">
-                            <svg class="w-4 h-4 text-ccg-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3"
-                                    d="M9 12l2 2 4-4" />
-                            </svg>
-                        </div>
-                        Data Security
-                    </h4>
-                    <p class="text-sm">Cross Care Group is a Microsoft-first organization. All clinical data is stored
-                        in healthcare-standard encrypted environments with multi-factor audit paths.</p>
-                </div>
+            <!-- Last Updated -->
+            <div class="bg-slate-50 p-4 rounded-2xl border border-slate-100 mb-10 text-center">
+                <p class="text-xs font-black uppercase tracking-widest text-slate-400 m-0">Last updated: February 2026</p>
             </div>
 
+            <!-- 1. About This Policy -->
             <section>
-                <h3>2. Clinical Disclosure</h3>
-                <p>Information may be shared only with defined care team members (Doctors, OT, Registered Nurses) as
-                    part of your integrated care plan. We never disclose data for marketing purposes.</p>
+                <h3>1. About This Policy</h3>
+                <p><strong>[ENTITY LEGAL NAME]</strong> (ABN: <strong>[ABN NUMBER]</strong>), trading as <strong>Cross Care Group</strong> ("we", "us", "our"), is committed to protecting the privacy of your personal information. Our registered address is <strong>[REGISTERED ADDRESS]</strong>.</p>
+                <p>This Privacy Policy explains how we collect, use, store, disclose and protect personal information in accordance with the <em>Privacy Act 1988</em> (Cth) and the Australian Privacy Principles (APPs), and the EU General Data Protection Regulation (GDPR) where applicable.</p>
+                <p>By using our website or submitting information through our forms, you acknowledge that you have read and understood this policy.</p>
             </section>
 
+            <!-- 2. Information We Collect -->
             <section>
-                <h3>3. Your Rights</h3>
-                <p>You have the right to request a copy of your clinical data held by the Cross Care Group at any time.
-                    Requests are generally processed within 2 business days.</p>
+                <h3>2. Information We Collect</h3>
+                <p>We collect personal information that is reasonably necessary to provide our services. The types of information we collect depend on your interaction with us:</p>
+
+                <h4 class="text-ccg-navy font-bold text-base mt-6 mb-3">2.1 Support Requests</h4>
+                <p>Full name, phone number, email address, support type, description of support needs, and consent status.</p>
+
+                <h4 class="text-ccg-navy font-bold text-base mt-6 mb-3">2.2 Contact Enquiries</h4>
+                <p>Full name, email address, phone number, reason for enquiry, message content, catalogue preference, and consent status.</p>
+
+                <h4 class="text-ccg-navy font-bold text-base mt-6 mb-3">2.3 Referrals (including via JotForm)</h4>
+                <p>This is our most data-intensive collection point and may include:</p>
+                <ul>
+                    <li><strong>Referrer details:</strong> Name, organisation, phone, email, relationship to client</li>
+                    <li><strong>Client details:</strong> Full name, date of birth, address, phone, email</li>
+                    <li><strong>Emergency contacts:</strong> Name, relationship, phone, email</li>
+                    <li><strong>Funding information:</strong> NDIS plan dates, goals, plan management type, plan manager details, insurer details, claim numbers, funding amounts</li>
+                    <li><strong>Health and sensitive information:</strong> Primary and secondary diagnoses, risk flags (falls, skin integrity, seizures, behavioural concerns), clinical snapshots, current supports, medication details, hospital discharge information</li>
+                    <li><strong>Service details:</strong> Requested services, urgency level, delivery method preferences</li>
+                    <li><strong>Attachments:</strong> Uploaded documents (PDF, DOC, DOCX, JPG, JPEG, PNG up to 10MB per file)</li>
+                    <li><strong>Consent and authority:</strong> Consent to collect and store data, authority to act on behalf of client</li>
+                </ul>
+
+                <h4 class="text-ccg-navy font-bold text-base mt-6 mb-3">2.4 Expressions of Interest (Careers)</h4>
+                <p>Full name, email, phone, preferred location, desired role, availability, professional registrations, CV/resume upload, narrative statement, and consent status.</p>
+
+                <h4 class="text-ccg-navy font-bold text-base mt-6 mb-3">2.5 Feedback and Complaints</h4>
+                <p>Name (optional), contact details (optional for feedback, required for complaints), message content, desired outcomes, and consent to be contacted.</p>
+
+                <h4 class="text-ccg-navy font-bold text-base mt-6 mb-3">2.6 Technical Information</h4>
+                <p>When you visit our website, the following technical information may be collected automatically:</p>
+                <ul>
+                    <li>IP address (transmitted to Google via Google Fonts loading)</li>
+                    <li>Browser type and version</li>
+                    <li>Pages visited and time spent on the site</li>
+                    <li>Referring website</li>
+                </ul>
             </section>
 
+            <!-- 3. Sensitive Information -->
+            <section>
+                <h3>3. Sensitive Information</h3>
+                <p>Under the Privacy Act 1988 and APP 3, "sensitive information" includes health information, disability status, and other categories that require additional protections. Under the GDPR, this is referred to as "special category data" (Article 9).</p>
+                <p>We collect sensitive information (including health and disability information) through our referral forms. This information is collected:</p>
+                <ul>
+                    <li>With your explicit consent (or the consent of your authorised representative)</li>
+                    <li>Where it is directly related to and reasonably necessary for providing our care services</li>
+                    <li>In accordance with APP 3.3 and GDPR Article 9(2)(a) and (h)</li>
+                </ul>
+            </section>
+
+            <!-- 4. How We Use Your Information -->
+            <section>
+                <h3>4. How We Use Your Information</h3>
+                <p>We use personal information for the following purposes:</p>
+                <ul>
+                    <li>To assess, plan and deliver care services tailored to your needs</li>
+                    <li>To process and respond to support requests and enquiries</li>
+                    <li>To process referrals and coordinate care with your existing providers</li>
+                    <li>To evaluate expressions of interest for employment</li>
+                    <li>To manage and respond to feedback and complaints</li>
+                    <li>To comply with legal and regulatory obligations (including NDIS Quality and Safeguards Commission requirements)</li>
+                    <li>To improve the quality and safety of our services</li>
+                    <li>To communicate with you about your care or enquiry</li>
+                </ul>
+                <p>We do <strong>not</strong> use your personal information for direct marketing purposes unless you have explicitly opted in (e.g., requesting our service catalogue).</p>
+            </section>
+
+            <!-- 5. Legal Basis for Processing (GDPR) -->
+            <section>
+                <h3>5. Legal Basis for Processing (GDPR)</h3>
+                <p>Where the GDPR applies, we process your personal data on the following legal bases:</p>
+                <ul>
+                    <li><strong>Consent</strong> (Article 6(1)(a)): Where you have given clear consent for us to process your data for a specific purpose (e.g., form submissions).</li>
+                    <li><strong>Contract</strong> (Article 6(1)(b)): Where processing is necessary to perform a contract with you or take pre-contractual steps at your request (e.g., service agreements).</li>
+                    <li><strong>Legal obligation</strong> (Article 6(1)(c)): Where processing is necessary to comply with a legal obligation (e.g., NDIS reporting).</li>
+                    <li><strong>Vital interests</strong> (Article 6(1)(d)): In emergency situations where processing is necessary to protect your life or health.</li>
+                    <li><strong>Legitimate interests</strong> (Article 6(1)(f)): Where processing is necessary for our legitimate interests (e.g., improving service quality), provided those interests do not override your fundamental rights.</li>
+                </ul>
+                <p>For special category data (health information), we rely on <strong>explicit consent</strong> (Article 9(2)(a)) and/or the <strong>health or social care</strong> exemption (Article 9(2)(h)).</p>
+            </section>
+
+            <!-- 6. Third-Party Data Processors -->
+            <section>
+                <h3>6. Third-Party Data Processors and Disclosure</h3>
+                <p>We share personal information with the following categories of third-party service providers who assist us in delivering our services:</p>
+
+                <div class="overflow-x-auto my-6">
+                    <table class="w-full text-sm border-collapse">
+                        <thead>
+                            <tr class="bg-slate-50">
+                                <th class="text-left p-3 border border-slate-200 font-bold text-ccg-navy">Provider</th>
+                                <th class="text-left p-3 border border-slate-200 font-bold text-ccg-navy">Purpose</th>
+                                <th class="text-left p-3 border border-slate-200 font-bold text-ccg-navy">Data Shared</th>
+                                <th class="text-left p-3 border border-slate-200 font-bold text-ccg-navy">Location</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="p-3 border border-slate-200">Microsoft (Power Automate)</td>
+                                <td class="p-3 border border-slate-200">Form submission processing and workflow automation</td>
+                                <td class="p-3 border border-slate-200">All data submitted through website forms (support, contact, referral, EOI, feedback)</td>
+                                <td class="p-3 border border-slate-200">Australia / United States</td>
+                            </tr>
+                            <tr>
+                                <td class="p-3 border border-slate-200">JotForm Inc.</td>
+                                <td class="p-3 border border-slate-200">Referral form hosting (Community Care and Allied Health)</td>
+                                <td class="p-3 border border-slate-200">Referral form data entered within JotForm-hosted forms</td>
+                                <td class="p-3 border border-slate-200">United States</td>
+                            </tr>
+                            <tr>
+                                <td class="p-3 border border-slate-200">Google LLC (Google Fonts)</td>
+                                <td class="p-3 border border-slate-200">Typography and font delivery</td>
+                                <td class="p-3 border border-slate-200">IP address, browser metadata</td>
+                                <td class="p-3 border border-slate-200">United States</td>
+                            </tr>
+                            <tr>
+                                <td class="p-3 border border-slate-200">YouTube (Google LLC)</td>
+                                <td class="p-3 border border-slate-200">Video content embedding</td>
+                                <td class="p-3 border border-slate-200">IP address, viewing data (when videos are played)</td>
+                                <td class="p-3 border border-slate-200">United States</td>
+                            </tr>
+                            <tr>
+                                <td class="p-3 border border-slate-200">SiteGround (hosting)</td>
+                                <td class="p-3 border border-slate-200">Website hosting and delivery</td>
+                                <td class="p-3 border border-slate-200">Server access logs (IP addresses, request data)</td>
+                                <td class="p-3 border border-slate-200">Australia</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <p>We may also disclose personal information to:</p>
+                <ul>
+                    <li>Your care team members (doctors, occupational therapists, registered nurses, allied health professionals) as part of your integrated care plan</li>
+                    <li>NDIS plan managers, support coordinators, and the NDIS Quality and Safeguards Commission</li>
+                    <li>Insurers and case managers (where relevant to your funding arrangement)</li>
+                    <li>Government authorities where required by law</li>
+                </ul>
+                <p>We <strong>never</strong> sell or disclose your personal information for marketing purposes to any third party.</p>
+            </section>
+
+            <!-- 7. Cross-Border Data Transfers -->
+            <section>
+                <h3>7. Cross-Border Data Transfers</h3>
+                <p>Some of our third-party service providers are located outside of Australia, primarily in the United States. Under APP 8, before disclosing personal information to an overseas recipient, we take reasonable steps to ensure the recipient handles the information in accordance with the APPs.</p>
+                <p>For individuals in the European Economic Area (EEA), cross-border transfers to countries outside the EEA are conducted in compliance with GDPR Article 46, relying on:</p>
+                <ul>
+                    <li>Standard Contractual Clauses (SCCs) approved by the European Commission</li>
+                    <li>The EU-US Data Privacy Framework (where applicable)</li>
+                    <li>Your explicit consent where no other safeguard is available</li>
+                </ul>
+            </section>
+
+            <!-- 8. Data Security -->
+            <section>
+                <h3>8. Data Security</h3>
+                <p>Cross Care Group is a Microsoft-first organisation. We take the security of your personal information seriously and implement the following safeguards:</p>
+                <ul>
+                    <li>HTTPS encryption (HSTS enforced) for all data in transit</li>
+                    <li>Content Security Policy (CSP) headers to prevent cross-site scripting</li>
+                    <li>Client-side input sanitisation and file validation</li>
+                    <li>Rate limiting on form submissions</li>
+                    <li>CORS origin allowlisting</li>
+                    <li>Healthcare-standard encrypted cloud environments for data storage</li>
+                    <li>Multi-factor authentication and audit trails for internal access</li>
+                </ul>
+                <p>While we take all reasonable steps to protect your information, no method of electronic transmission or storage is 100% secure. We cannot guarantee absolute security but are committed to promptly addressing any suspected breaches in accordance with the <em>Notifiable Data Breaches</em> scheme under Part IIIC of the Privacy Act 1988 and GDPR Article 33.</p>
+            </section>
+
+            <!-- 9. Data Retention -->
+            <section>
+                <h3>9. Data Retention</h3>
+                <p>We retain personal information only for as long as necessary to fulfil the purposes for which it was collected, or as required by law. Our standard retention periods are:</p>
+                <div class="overflow-x-auto my-6">
+                    <table class="w-full text-sm border-collapse">
+                        <thead>
+                            <tr class="bg-slate-50">
+                                <th class="text-left p-3 border border-slate-200 font-bold text-ccg-navy">Data Category</th>
+                                <th class="text-left p-3 border border-slate-200 font-bold text-ccg-navy">Retention Period</th>
+                                <th class="text-left p-3 border border-slate-200 font-bold text-ccg-navy">Basis</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="p-3 border border-slate-200">Referrals and health/clinical data</td>
+                                <td class="p-3 border border-slate-200">7 years after last service</td>
+                                <td class="p-3 border border-slate-200">Healthcare record-keeping obligations</td>
+                            </tr>
+                            <tr>
+                                <td class="p-3 border border-slate-200">Support requests and contact enquiries</td>
+                                <td class="p-3 border border-slate-200">3 years from date of enquiry</td>
+                                <td class="p-3 border border-slate-200">Service delivery and quality assurance</td>
+                            </tr>
+                            <tr>
+                                <td class="p-3 border border-slate-200">Feedback and complaints</td>
+                                <td class="p-3 border border-slate-200">2 years from resolution</td>
+                                <td class="p-3 border border-slate-200">Regulatory compliance and quality improvement</td>
+                            </tr>
+                            <tr>
+                                <td class="p-3 border border-slate-200">Expressions of interest (careers)</td>
+                                <td class="p-3 border border-slate-200">1 year from submission</td>
+                                <td class="p-3 border border-slate-200">Recruitment purposes</td>
+                            </tr>
+                            <tr>
+                                <td class="p-3 border border-slate-200">Website server logs</td>
+                                <td class="p-3 border border-slate-200">90 days</td>
+                                <td class="p-3 border border-slate-200">Security monitoring</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <p>When personal information is no longer required, it is securely destroyed or de-identified in accordance with APP 11.2 and GDPR Article 17.</p>
+            </section>
+
+            <!-- 10. Cookies and Tracking Technologies -->
+            <section>
+                <h3>10. Cookies and Tracking Technologies</h3>
+                <p>Our website uses the following technologies that may store or access information on your device:</p>
+                <ul>
+                    <li><strong>Essential cookies:</strong> Required for basic website functionality (e.g., cookie consent preferences). These do not require consent.</li>
+                    <li><strong>Google Fonts:</strong> Loaded from Google servers, which transmits your IP address to Google LLC. This is used to display website typography.</li>
+                    <li><strong>YouTube embeds:</strong> Where we embed YouTube videos, YouTube may set cookies on your device when videos are played.</li>
+                    <li><strong>Google Analytics:</strong> If enabled, we may use Google Analytics (GA4) to understand how visitors use our website. This is subject to your consent via our cookie banner.</li>
+                </ul>
+                <p>You can manage your cookie preferences at any time using the cookie settings accessible via the banner at the bottom of each page, or through your browser settings.</p>
+            </section>
+
+            <!-- 11. Your Rights -->
+            <section>
+                <h3>11. Your Rights</h3>
+                <h4 class="text-ccg-navy font-bold text-base mt-6 mb-3">11.1 Under the Australian Privacy Principles</h4>
+                <p>Under the APPs, you have the right to:</p>
+                <ul>
+                    <li><strong>Access</strong> (APP 12): Request access to personal information we hold about you</li>
+                    <li><strong>Correction</strong> (APP 13): Request correction of personal information that is inaccurate, out of date, incomplete, irrelevant or misleading</li>
+                    <li><strong>Complaint</strong> (APP 1): Lodge a complaint about our handling of your personal information</li>
+                </ul>
+
+                <h4 class="text-ccg-navy font-bold text-base mt-6 mb-3">11.2 Under the GDPR (where applicable)</h4>
+                <p>If you are in the European Economic Area (EEA) or the GDPR otherwise applies, you also have the right to:</p>
+                <ul>
+                    <li><strong>Erasure</strong> (Article 17): Request deletion of your personal data ("right to be forgotten")</li>
+                    <li><strong>Restriction</strong> (Article 18): Request restriction of processing in certain circumstances</li>
+                    <li><strong>Data portability</strong> (Article 20): Receive your personal data in a structured, commonly used, machine-readable format</li>
+                    <li><strong>Object</strong> (Article 21): Object to processing based on legitimate interests</li>
+                    <li><strong>Withdraw consent</strong> (Article 7(3)): Withdraw your consent at any time where consent is the basis of processing</li>
+                    <li><strong>Automated decision-making</strong> (Article 22): Not be subject to decisions based solely on automated processing</li>
+                </ul>
+
+                <h4 class="text-ccg-navy font-bold text-base mt-6 mb-3">11.3 How to Exercise Your Rights</h4>
+                <p>To exercise any of your rights, you may:</p>
+                <ul>
+                    <li>Email our Privacy Officer at: <strong><a href="mailto:[PRIVACY_OFFICER_EMAIL]" class="text-ccg-teal hover:underline">[PRIVACY_OFFICER_EMAIL]</a></strong></li>
+                    <li>Call us on: <strong>1300 591 861</strong> (Mon-Fri, 8:30am - 5:30pm AEST)</li>
+                    <li>Write to: Privacy Officer, <strong>[REGISTERED ADDRESS]</strong></li>
+                </ul>
+                <p>We will respond to access and correction requests within <strong>30 days</strong>. If we refuse a request, we will provide written reasons and information about how you can complain about the refusal.</p>
+            </section>
+
+            <!-- 12. Complaints -->
+            <section>
+                <h3>12. Complaints</h3>
+                <p>If you believe we have breached your privacy, you may lodge a complaint by contacting our Privacy Officer using the details above. We will acknowledge your complaint within 7 days and aim to resolve it within 30 days.</p>
+                <p>If you are unsatisfied with our response, you may lodge a complaint with:</p>
+                <ul>
+                    <li><strong>Australia:</strong> The Office of the Australian Information Commissioner (OAIC) at <a href="https://www.oaic.gov.au" class="text-ccg-teal hover:underline" target="_blank" rel="noopener noreferrer">www.oaic.gov.au</a> or by calling 1300 363 992</li>
+                    <li><strong>NDIS participants:</strong> The NDIS Quality and Safeguards Commission at <a href="https://www.ndiscommission.gov.au" class="text-ccg-teal hover:underline" target="_blank" rel="noopener noreferrer">www.ndiscommission.gov.au</a> or by calling 1800 035 544</li>
+                    <li><strong>EU/EEA residents:</strong> Your local data protection supervisory authority. A list is available at <a href="https://edpb.europa.eu/about-edpb/about-edpb/members_en" class="text-ccg-teal hover:underline" target="_blank" rel="noopener noreferrer">edpb.europa.eu</a></li>
+                </ul>
+            </section>
+
+            <!-- 13. Children's Privacy -->
+            <section>
+                <h3>13. Children's Privacy</h3>
+                <p>Where we collect personal information about children (under 18), we do so with the consent of a parent, guardian, or authorised representative. This commonly occurs through referral forms submitted by health professionals or family members on behalf of a child receiving care.</p>
+            </section>
+
+            <!-- 14. Changes to This Policy -->
+            <section>
+                <h3>14. Changes to This Policy</h3>
+                <p>We may update this Privacy Policy from time to time to reflect changes in our practices or legal requirements. Material changes will be communicated via a notice on our website. The "Last updated" date at the top of this policy indicates when it was most recently revised.</p>
+            </section>
+
+            <!-- 15. Contact Us -->
+            <section>
+                <h3>15. Contact Us</h3>
+                <p>For any questions or concerns about this Privacy Policy or our data practices, please contact:</p>
+                <div class="bg-slate-50 p-6 rounded-2xl border border-slate-100 mt-4">
+                    <p class="mb-2"><strong>Privacy Officer</strong></p>
+                    <p class="mb-2"><strong>[ENTITY LEGAL NAME]</strong> trading as Cross Care Group</p>
+                    <p class="mb-2">Email: <a href="mailto:[PRIVACY_OFFICER_EMAIL]" class="text-ccg-teal hover:underline">[PRIVACY_OFFICER_EMAIL]</a></p>
+                    <p class="mb-2">Phone: 1300 591 861</p>
+                    <p class="mb-0">Address: <strong>[REGISTERED ADDRESS]</strong></p>
+                </div>
+            </section>
 
         </div>
     </main>
@@ -589,6 +855,8 @@
     <script src="../../js/app.js" defer></script>
     <script src="../../js/config.js"></script>
     <script src="../../js/forms.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/gh/orestbida/cookieconsent@v3.0.1/dist/cookieconsent.umd.js" defer></script>
+    <script src="../../js/cookie-consent-config.js" defer></script>
 </body>
 
 </html>

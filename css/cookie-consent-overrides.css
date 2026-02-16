@@ -1,0 +1,186 @@
+/**
+ * Cookie Consent — CCG Brand Overrides
+ * Matches ccg-navy (#003B5C), ccg-teal (#0096A1), ccg-gold (#D4A843)
+ * Uses Inter font, rounded corners consistent with CCG design system
+ */
+
+/* ── Consent Modal ── */
+#cc-main .cm {
+    font-family: 'Inter', system-ui, sans-serif !important;
+    border-radius: 1.5rem !important;
+    border: 1px solid rgba(0, 59, 92, 0.08) !important;
+    box-shadow: 0 25px 60px -12px rgba(0, 59, 92, 0.15) !important;
+    max-width: 420px !important;
+}
+
+#cc-main .cm__title {
+    color: #003B5C !important;
+    font-weight: 800 !important;
+    letter-spacing: -0.02em !important;
+}
+
+#cc-main .cm__desc {
+    color: #64748b !important;
+    font-weight: 500 !important;
+    line-height: 1.7 !important;
+    font-size: 0.875rem !important;
+}
+
+#cc-main .cm__desc a.cc-link {
+    color: #0096A1 !important;
+    font-weight: 700 !important;
+}
+
+/* Accept All button */
+#cc-main .cm__btn[data-role="all"] {
+    background: #003B5C !important;
+    color: #fff !important;
+    border: none !important;
+    border-radius: 1rem !important;
+    font-weight: 800 !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.1em !important;
+    font-size: 0.75rem !important;
+    padding: 0.85rem 1.5rem !important;
+    transition: all 0.3s ease !important;
+}
+
+#cc-main .cm__btn[data-role="all"]:hover {
+    background: #D4A843 !important;
+    color: #003B5C !important;
+    transform: translateY(-1px) !important;
+}
+
+/* Necessary Only button */
+#cc-main .cm__btn[data-role="necessary"] {
+    background: transparent !important;
+    color: #003B5C !important;
+    border: 2px solid rgba(0, 59, 92, 0.15) !important;
+    border-radius: 1rem !important;
+    font-weight: 800 !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.1em !important;
+    font-size: 0.75rem !important;
+    padding: 0.85rem 1.5rem !important;
+    transition: all 0.3s ease !important;
+}
+
+#cc-main .cm__btn[data-role="necessary"]:hover {
+    border-color: #D4A843 !important;
+    color: #003B5C !important;
+}
+
+/* Manage Preferences button */
+#cc-main .cm__btn--secondary {
+    background: transparent !important;
+    color: #0096A1 !important;
+    border: none !important;
+    font-weight: 700 !important;
+    font-size: 0.8rem !important;
+    text-decoration: underline !important;
+    text-underline-offset: 3px !important;
+    padding: 0.5rem 0 !important;
+}
+
+#cc-main .cm__btn--secondary:hover {
+    color: #003B5C !important;
+}
+
+/* ── Preferences Modal ── */
+#cc-main .pm {
+    font-family: 'Inter', system-ui, sans-serif !important;
+    border-radius: 1.5rem !important;
+}
+
+#cc-main .pm__title {
+    color: #003B5C !important;
+    font-weight: 800 !important;
+}
+
+#cc-main .pm__section-title {
+    color: #003B5C !important;
+    font-weight: 700 !important;
+}
+
+#cc-main .pm__section-desc {
+    color: #64748b !important;
+    font-weight: 500 !important;
+    line-height: 1.7 !important;
+}
+
+#cc-main .pm__section-desc a.cc-link {
+    color: #0096A1 !important;
+    font-weight: 700 !important;
+}
+
+/* Toggle switches — teal when on */
+#cc-main .pm__badge {
+    border-radius: 0.5rem !important;
+}
+
+#cc-main .section__toggle .toggle__icon {
+    background: #0096A1 !important;
+}
+
+/* Save / Accept buttons in preferences */
+#cc-main .pm__btn[data-role="all"] {
+    background: #003B5C !important;
+    color: #fff !important;
+    border: none !important;
+    border-radius: 1rem !important;
+    font-weight: 800 !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.1em !important;
+    font-size: 0.75rem !important;
+}
+
+#cc-main .pm__btn[data-role="all"]:hover {
+    background: #D4A843 !important;
+    color: #003B5C !important;
+}
+
+#cc-main .pm__btn[data-role="necessary"] {
+    background: transparent !important;
+    color: #003B5C !important;
+    border: 2px solid rgba(0, 59, 92, 0.15) !important;
+    border-radius: 1rem !important;
+    font-weight: 800 !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.1em !important;
+    font-size: 0.75rem !important;
+}
+
+#cc-main .pm__btn[data-role="save"] {
+    background: #0096A1 !important;
+    color: #fff !important;
+    border: none !important;
+    border-radius: 1rem !important;
+    font-weight: 800 !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.1em !important;
+    font-size: 0.75rem !important;
+}
+
+#cc-main .pm__btn[data-role="save"]:hover {
+    background: #003B5C !important;
+}
+
+/* Close icon */
+#cc-main .pm__close-btn {
+    color: #003B5C !important;
+}
+
+/* Cookie table styling */
+#cc-main .pm__table th {
+    color: #003B5C !important;
+    font-weight: 800 !important;
+    font-size: 0.7rem !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.15em !important;
+}
+
+#cc-main .pm__table td {
+    color: #64748b !important;
+    font-weight: 500 !important;
+    font-size: 0.8rem !important;
+}

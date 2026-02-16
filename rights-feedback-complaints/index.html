@@ -3,7 +3,7 @@
 
 <head>
     <meta http-equiv="Content-Security-Policy"
-        content="default-src 'self'; script-src 'self' https://www.googletagmanager.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https://*.jotform.com https://*.jotfor.ms https://www.google-analytics.com https://www.googletagmanager.com https://img.youtube.com; frame-src 'self' https://www.youtube.com https://youtube.com https://www.youtube-nocookie.com https://form.jotform.com https://jotform.com https://*.jotform.com https://*.jotfor.ms blob:; connect-src 'self' https://*.powerplatform.com https://*.azure.com https://*.jotform.com https://*.jotfor.ms; object-src 'none'; base-uri 'self'; form-action 'self' https://*.jotform.com; frame-ancestors 'none'; upgrade-insecure-requests;">
+        content="default-src 'self'; script-src 'self' https://www.googletagmanager.com https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdn.jsdelivr.net; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https://*.jotform.com https://*.jotfor.ms https://www.google-analytics.com https://www.googletagmanager.com https://img.youtube.com; frame-src 'self' https://www.youtube.com https://youtube.com https://www.youtube-nocookie.com https://form.jotform.com https://jotform.com https://*.jotform.com https://*.jotfor.ms blob:; connect-src 'self' https://*.powerplatform.com https://*.azure.com https://*.jotform.com https://*.jotfor.ms; object-src 'none'; base-uri 'self'; form-action 'self' https://*.jotform.com; frame-ancestors 'none'; upgrade-insecure-requests;">
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1" name="viewport" />
     <title>Rights, Feedback & Complaints | Cross Care Group</title>
@@ -17,6 +17,8 @@
         rel="stylesheet">
     <link rel="stylesheet" href="../styles/main.css">
     <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orestbida/cookieconsent@v3.0.1/dist/cookieconsent.css">
+    <link rel="stylesheet" href="../css/cookie-consent-overrides.css">
 </head>
 
 <body id="rights-page">
@@ -291,6 +293,9 @@
                     <a href="#external-support"
                         class="text-[11px] font-black uppercase tracking-[0.2em] text-ccg-navy/40 hover:text-ccg-teal transition-colors">External
                         Support</a>
+                    <a href="#privacy-rights"
+                        class="text-[11px] font-black uppercase tracking-[0.2em] text-ccg-navy/40 hover:text-ccg-teal transition-colors">Privacy
+                        Rights</a>
                 </nav>
             </div>
         </div>
@@ -615,6 +620,119 @@
             </div>
         </section>
 
+        <!-- Data Privacy Rights Section -->
+        <section class="py-24 bg-white relative overflow-hidden border-t border-slate-100" id="privacy-rights">
+            <div class="container relative z-10">
+                <div class="max-w-4xl mx-auto">
+                    <div class="text-center mb-16" data-reveal>
+                        <span
+                            class="text-xs font-black uppercase tracking-[0.3em] text-ccg-teal mb-4 block">Data Privacy</span>
+                        <h2 class="text-5xl lg:text-7xl font-black text-ccg-navy mb-8 tracking-tight italic leading-[1.1]">
+                            Your Privacy Rights</h2>
+                        <div class="w-20 h-1.5 bg-ccg-gold mx-auto mb-10"></div>
+                        <p class="text-slate-500 text-lg max-w-xl mx-auto font-medium">
+                            Under the Australian Privacy Act 1988 and the EU General Data Protection Regulation (GDPR),
+                            you have the right to access, correct, or request deletion of your personal information.
+                        </p>
+                    </div>
+
+                    <!-- Rights Cards Grid -->
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-16" data-reveal>
+                        <div class="bg-slate-50 rounded-3xl p-8 border border-slate-100">
+                            <div class="w-12 h-12 bg-ccg-teal/10 rounded-2xl flex items-center justify-center mb-5">
+                                <svg class="w-6 h-6 text-ccg-teal" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+                                </svg>
+                            </div>
+                            <h3 class="text-lg font-black text-ccg-navy mb-3">Access Your Data</h3>
+                            <p class="text-slate-500 text-sm font-medium leading-relaxed">
+                                Request a copy of the personal information we hold about you (APP 12 / GDPR Art. 15).
+                            </p>
+                        </div>
+                        <div class="bg-slate-50 rounded-3xl p-8 border border-slate-100">
+                            <div class="w-12 h-12 bg-ccg-gold/10 rounded-2xl flex items-center justify-center mb-5">
+                                <svg class="w-6 h-6 text-ccg-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" />
+                                </svg>
+                            </div>
+                            <h3 class="text-lg font-black text-ccg-navy mb-3">Correct Your Data</h3>
+                            <p class="text-slate-500 text-sm font-medium leading-relaxed">
+                                Ask us to correct any inaccurate or outdated personal information (APP 13 / GDPR Art. 16).
+                            </p>
+                        </div>
+                        <div class="bg-slate-50 rounded-3xl p-8 border border-slate-100">
+                            <div class="w-12 h-12 bg-red-50 rounded-2xl flex items-center justify-center mb-5">
+                                <svg class="w-6 h-6 text-red-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
+                                </svg>
+                            </div>
+                            <h3 class="text-lg font-black text-ccg-navy mb-3">Request Deletion</h3>
+                            <p class="text-slate-500 text-sm font-medium leading-relaxed">
+                                Request erasure of your personal data, subject to legal retention requirements (GDPR Art. 17).
+                            </p>
+                        </div>
+                        <div class="bg-slate-50 rounded-3xl p-8 border border-slate-100">
+                            <div class="w-12 h-12 bg-ccg-teal/10 rounded-2xl flex items-center justify-center mb-5">
+                                <svg class="w-6 h-6 text-ccg-teal" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M18.364 18.364A9 9 0 005.636 5.636m12.728 12.728A9 9 0 015.636 5.636m12.728 12.728L5.636 5.636" />
+                                </svg>
+                            </div>
+                            <h3 class="text-lg font-black text-ccg-navy mb-3">Restrict Processing</h3>
+                            <p class="text-slate-500 text-sm font-medium leading-relaxed">
+                                Request that we limit how we use your data, or object to certain processing (GDPR Arts. 18 & 21).
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- How to Submit a Request -->
+                    <div class="bg-ccg-navy rounded-[3rem] p-8 md:p-16 text-white" data-reveal>
+                        <h3 class="text-3xl font-black mb-8 tracking-tight">How to Submit a Privacy Request</h3>
+                        <p class="text-white/60 font-medium leading-relaxed mb-10">
+                            To exercise any of your privacy rights, please contact our Privacy Officer using one of the methods below.
+                            We will respond to your request within <strong class="text-white">30 days</strong> (as required under the APPs)
+                            or <strong class="text-white">one month</strong> (as required under the GDPR). You will need to verify your
+                            identity before we can process your request.
+                        </p>
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                            <div class="bg-white/5 rounded-2xl p-6 border border-white/10">
+                                <span class="text-ccg-gold font-black text-[10px] uppercase tracking-[0.3em] block mb-3">Email</span>
+                                <a href="mailto:[PRIVACY_OFFICER_EMAIL]"
+                                    class="text-white font-bold hover:text-ccg-gold transition-colors text-sm break-all">[PRIVACY_OFFICER_EMAIL]</a>
+                                <p class="text-white/40 text-xs font-medium mt-2">Subject: Privacy Rights Request</p>
+                            </div>
+                            <div class="bg-white/5 rounded-2xl p-6 border border-white/10">
+                                <span class="text-ccg-gold font-black text-[10px] uppercase tracking-[0.3em] block mb-3">Phone</span>
+                                <a href="tel:1300591861"
+                                    class="text-white font-bold hover:text-ccg-gold transition-colors text-sm">1300 591 861</a>
+                                <p class="text-white/40 text-xs font-medium mt-2">Mon-Fri: 8:30am - 5:30pm</p>
+                            </div>
+                            <div class="bg-white/5 rounded-2xl p-6 border border-white/10">
+                                <span class="text-ccg-gold font-black text-[10px] uppercase tracking-[0.3em] block mb-3">Post</span>
+                                <p class="text-white font-bold text-sm">Privacy Officer<br>[REGISTERED ADDRESS]</p>
+                            </div>
+                        </div>
+                        <div class="mt-10 pt-8 border-t border-white/10">
+                            <p class="text-white/40 text-xs font-bold leading-relaxed">
+                                If you are unsatisfied with our response, you may lodge a complaint with the
+                                <a href="https://www.oaic.gov.au/privacy/privacy-complaints" target="_blank" rel="noopener"
+                                    class="text-ccg-gold hover:underline">Office of the Australian Information Commissioner (OAIC)</a>
+                                or, for EU residents, your local
+                                <a href="https://edpb.europa.eu/about-edpb/about-edpb/members_en" target="_blank" rel="noopener"
+                                    class="text-ccg-gold hover:underline">Data Protection Authority</a>.
+                                See our <a href="../legal/privacy-policy/" class="text-ccg-gold hover:underline">Privacy Policy</a> for full details.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!-- Final CTA Section -->
         <section class="py-24 bg-white relative overflow-hidden border-t border-slate-100">
             <div class="container relative z-10">
@@ -819,6 +937,8 @@
     <script src="../js/app.js" defer></script>
     <script src="../js/config.js"></script>
     <script src="../js/forms.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/gh/orestbida/cookieconsent@v3.0.1/dist/cookieconsent.umd.js" defer></script>
+    <script src="../js/cookie-consent-config.js" defer></script>
 </body>
 
 </html>
