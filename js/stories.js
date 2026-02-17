@@ -164,6 +164,10 @@ document.addEventListener('DOMContentLoaded', () => {
         modal.classList.remove('invisible', 'opacity-0');
         document.body.style.overflow = 'hidden';
 
+        // Reset scroll position to top
+        const modalContent = document.getElementById('modal-content');
+        if (modalContent) modalContent.scrollTop = 0;
+
         // Improve accessibility focus
         const closeBtn = document.getElementById('close-modal-btn');
         if (closeBtn) closeBtn.addEventListener('click', closeModalFunc);
